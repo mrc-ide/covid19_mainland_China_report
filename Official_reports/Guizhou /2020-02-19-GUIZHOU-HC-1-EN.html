@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>February 16-17, Guizhou Province area information of confirmed cases of new crown virus pneumonia</title>
+<meta name="SiteName" content="Guizhou Provincial Health Committee">
+<meta name="SiteDomain" content="http://www.gzhfpc.gov.cn">
+<meta name="SiteIDCode" content="5200000034">
+<meta name="ColumnName" content="announcement">
+<meta name="ColumnType" content="announcement">
+<meta name="ArticleTitle" content="February 16-17, Guizhou Province area information of confirmed cases of new crown virus pneumonia">
+<meta name="DOCRELTIME" content="2020-02-19 16:43:32">
+<meta name="ContentSource" content="">
+<meta name="Keywords" content="February 16-17, Guizhou Province area information of confirmed cases of new crown virus pneumonia">
+<meta name="Author" content="">
+<meta name="Description" content="">
+<meta name="Image" content="">
+<meta name="Url" content="http://www.gzhfpc.gov.cn/xwzx_500663/tzgg/202002/t20200219_50131225.html">
+<link rel="stylesheet" href="/images/nry.css">
+<!--<script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/18eec2f64c7d1e4df2f575cfed754977/allmobilize.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="http://gmwz-1251053291.file.myqcloud.com/hnV3rq55cduGp6XYfXqmoJNp0aJ9ntWag4aNaX-4eWyCmq2gxaKG3ZyV0NeSm3xteaGqrIF3sGo.js"></script>--><meta http-equiv="Cache-Control" content="no-siteapp">
+<link rel="alternate" media="handheld" href="#">
+<script src="/images/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8" ignore="1"></script><script src="/images/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8" ignore="1"></script><script type="text/javascript" src="/tools/layui/layui.js"></script><script src="/tools/js/layer/layer.js" type="text/javascript"></script><script>
+function cutstr(str, len) {
+    var str_length = 0;
+    var str_len = 0;
+    str_cut = new String();
+    str_len = str.length;
+    for (var i = 0; i < str_len; i++) {
+        a = str.charAt(i);
+        str_length++;
+        if (escape(a).length >4) {
+            // The length of Chinese characters is greater than 4 after encoding
+            str_length ++;
+        }
+        str_cut = str_cut.concat (a);
+        if (str_length> = len) {
+            str_cut = str_cut.concat ("...");
+            return str_cut;
+        }
+    }
+    // If the given string is less than the specified length, return the source string;
+    if (str_length< len) {
+        return str;
+    }
+}
+</script><script>function getMyDate (timestamp) {
+            var date = new Date (timestamp); // The timestamp is 10 digits and needs * 1000. If the timestamp is 13 digits, you don't need to multiply 1000
+            Y = date.getFullYear () + '-';
+            M = (date.getMonth () + 1< 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+            D = date.getDate() + ' ';
+            h = date.getHours() + ':';
+            m = date.getMinutes() + ':';
+            s = getzf(date.getSeconds());
+            return Y+M+D;
+        }
+        function getzf(num){  
+          if(parseInt(num) < 10){ num = '0'+num; }
+          return num;  
+        }
+        function GetStatus(status){
+            if(status == "4"){
+                status = "Pending";
+            }else if(status == "5"){
+                status = "Pending review";
+            }else if(status == "7"){
+                status = "Completed";
+            }else{
+                status = "Processing";
+            }
+            return status;
+        }
+	</script><script type="text/javascript">
+			var CalendarData = new Array(20);
+    var madd = new Array(12);
+    var TheDate;
+    var tgString = "Methyl ethyl butyl pentamidine";
+    var dzString = "Zi Chou Yin Chen Chen has not applied for Wu Hai";
+    var numString = "one two three four five six seven eight nine ten";
+    var monString = "Positive two three four five six seven eight ninety winter wax";
+    var weekString = "Day one two three four five six";
+    var sx = "Rat cow tiger rabbit dragon snake horse sheep monkey chicken dog pig";
+    var cYear;
+    var cMonth;
+    var cDay;
+    var cHour;
+    var cDateString;
+    var cDateYear;
+    var cDateHour;
+    var DateString;
+    var Browser = navigator.appName;
+    function init() {
+        CalendarData[0] = 0x41A95;
+        CalendarData[1] = 0xD4A;
+        CalendarData[2] = 0xDA5;
+        CalendarData[3] = 0x20B55;
+        CalendarData[4] = 0x56A;
+        CalendarData[5] = 0x7155B;
+        CalendarData[6] = 0x25D;
+        CalendarData[7] = 0x92D;
+        CalendarData[8] = 0x5192B;
+        CalendarData[9] = 0xA95;
+        CalendarData[10] = 0xB4A;
+        CalendarData[11] = 0x416AA;
+        CalendarData[12] = 0xAD5;
+        CalendarData[13] = 0x90AB5;
+        CalendarData[14] = 0x4BA;
+        CalendarData[15] = 0xA5B;
+        CalendarData[16] = 0x60A57;
+        CalendarData[17] = 0x52B;
+        CalendarData[18] = 0xA93;
+        CalendarData[19] = 0x40E95;
+        madd[0] = 0;
+        madd[1] = 31;
+        madd[2] = 59;
+        madd[3] = 90;
+        madd[4] = 120;
+        madd[5] = 151;
+        madd[6] = 181;
+        madd[7] = 212;
+        madd[8] = 243;
+        madd[9] = 273;
+        madd[10] = 304;
+        madd[11] = 334;
+    }
+    function GetBit(m, n) {
+        return (m >> n) & 1;
+    }
+    function e2c() {
+        TheDate = new Date();
+        var total, m, n, k;
+        var isEnd = false;
+        var tmp = TheDate.getYear();
+        if (tmp < 1900) tmp += 1900;
+        total = (tmp - 2001) * 365
+          + Math.floor((tmp - 2001) / 4)
+          + madd[TheDate.getMonth()]
+          + TheDate.getDate()
+          - 23;
+        if (TheDate.getYear() % 4 == 0 && TheDate.getMonth() > 1)
+            total++;
+        for (m = 0; ; m++) {
+            k = (CalendarData[m] < 0xfff) ? 11 : 12;
+            for (n = k; n >= 0; n--) {
+                if (total <= 29 + GetBit(CalendarData[m], n)) {
+                    isEnd = true;
+                    break;
+                }
+                total = total - 29 - GetBit(CalendarData[m], n);
+            }
+            if (isEnd) break;
+        }
+        cYear = 2001 + m;
+        cMonth = k - n + 1;
+        cDay = total;
+        if (k == 12) {
+            if (cMonth == Math.floor(CalendarData[m] / 0x10000) + 1)
+                cMonth = 1 - cMonth;
+            if (cMonth > Math.floor(CalendarData[m] / 0x10000) + 1)
+                cMonth--;
+        }
+        cHour = Math.floor((TheDate.getHours() + 3) / 2);
+    }
+    function GetcDateString() {
+        var tmp = "";
+
+        if (cMonth < 1) {
+            tmp += "Intercalary";
+            tmp += monString.charAt(-cMonth - 1);
+        }
+        else
+            tmp += monString.charAt(cMonth - 1);
+        tmp += "month";
+        tmp += (cDay < 11) ? "early" : ((cDay < 20) ? "ten" : ((cDay < 30) ? "Twenty" : "thirty"));
+        if (cDay % 10 != 0 || cDay == 10)
+            tmp += numString.charAt((cDay - 1) % 10);
+        tmp += "    ";
+
+        cDateString = tmp;
+        return tmp;
+    }
+    function GetcDateYear() {
+        var tmp = "";
+        tmp + = tgString.charAt ((cYear-4)% 10); // year dry
+        tmp + = dzString.charAt ((cYear-4)% 12); // Annual support
+        tmp + ="year(";
+        tmp += sx.charAt((cYear - 4) % 12);
+        tmp += ")   ";
+
+        cDateYear = tmp;
+        return tmp;
+    }
+    function GetcDataHour() {
+
+        var tmp = "";
+        if (cHour == 13) tmp += "night";
+        tmp += dzString.charAt((cHour - 1) % 12);
+        tmp += "Time";
+
+        cDateHour = tmp;
+        return tmp;
+    }
+    function GetDateString() {
+        var tmp = "";
+        var t1 = TheDate.getYear();
+        if (t1 < 1900) t1 += 1900;
+        tmp +="Today is:"+t1
+                + "year"
+                + (TheDate.getMonth() + 1) + "month"
+                + TheDate.getDate() + "day"
+                + TheDate.getHours() + ":"
+                + ((TheDate.getMinutes() < 10) ? "0" : "")
+                + TheDate.getMinutes() + ":"
+                + ((TheDate.getSeconds() < 10) ? "0" : "")
+                + TheDate.getSeconds();
+        //                + "week" + weekString.charAt(TheDate.getDay());
+        DateString = tmp;
+        return tmp;
+    }
+    function ShowDateTime() {
+        init();
+        e2c();
+        GetDateString();
+        GetcDateString();
+        GetcDateYear();
+        GetcDataHour();
+        var label = document.getElementById("labelTime");
+        label.innerHTML = DateString + "  " + "Lunar calendar:"+cDateYear+ cDateString;
+        setTimeout(ShowDateTime, 1000);
+    }			
+		</script><script type="text/javascript">
+			function AddFavorite(sURL, sTitle) {
+				try {
+					window.external.addFavorite(sURL, sTitle)
+				} catch (e) {
+					try {
+						window.sidebar.addPanel(sTitle, sURL, "")
+					} catch (e) {
+						alert("Add to favorites failed, please use Ctrl + D to add")
+}
+}
+}
+// set as homepage
+                    function SetHome (obj, vrl) {
+                        try {
+                            obj.style.behavior = 'url (# default # homepage)';
+                            obj.setHomePage (vrl);
+                        }
+                        catch (e) {
+                            if (window.netscape) {
+                                try {
+                                    netscape.security.PrivilegeManager.enablePrivilege ("UniversalXPConnect");
+                                }
+                                catch (e) {
+                                    alert("This operation was rejected by the browser! \ nPlease enter "about: config" in the address bar of your browser and press Enter. \ nThen set the value of [signed.applets.codebase_principal_support] to 'true' and double-click.");
+                                }
+                                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                                prefs.setCharPref('browser.startup.homepage', vrl);
+                            } else {
+                                alert("Your browser does not support it, please follow the steps below: 1. Open your browser settings. 2. Click on the settings page. 3. Enter:" + vrl + "Click OK.");
+                            }
+                        }
+                    }
+</script><script type="text/javascript">$ ('. wx'). on ('click', function () {
+                        layer.open ({
+                            type: 1,
+                            area: ['360px', '360px'],
+                            title: false, // Do not show title
+                            shadeClose: true,
+                            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+                        });
+                    });
+                </script><style>
+.nav .m{margin: 0px 28px 0px 8px;}
+</style>
+<script type="text/javascript">
+        function fontResizer(smallFont,medFont,largeFont){
+
+            function clearSelected(){
+                $(".smallFont").removeClass("curFont");
+                $(".medFont").removeClass("curFont");
+                $(".largeFont").removeClass("curFont");
+            }
+
+            function saveState(curSize){
+                var date = new Date();
+                date.setTime(date.getTime()+(7*24*60*60*1000));
+                var expires = "; expires="+date.toGMTString();
+                document.cookie = "fontSizer"+"="+curSize+expires+"; path=/";
+            }
+
+            $(".smallFont").click(function(){
+                $('#Zoom').css('font-size', smallFont);
+                clearSelected();
+                $(".smallFont").addClass("curFont");
+                saveState(smallFont);
+            });
+
+            $(".medFont").click(function(){
+                $('#Zoom').css('font-size', medFont);
+                clearSelected();
+                $(".medFont").addClass("curFont");
+                saveState(medFont);
+            });
+
+            $(".largeFont").click(function(){
+                $('#Zoom').css('font-size', largeFont);
+                clearSelected();
+                $(".largeFont").addClass("curFont");
+                saveState(largeFont);
+            });
+
+            function getCookie(c_name){
+                if(document.cookie.length>0){
+                    c_start=document.cookie.indexOf(c_name + "=");
+                    if (c_start!=-1){
+                        c_start=c_start + c_name.length+1;
+                        c_end=document.cookie.indexOf(";",c_start);
+                        if(c_end==-1)c_end=document.cookie.length;
+                        return unescape(document.cookie.substring(c_start,c_end));
+                    }
+                }
+                return "";
+            }
+
+            var savedSize = getCookie('fontSizer');
+
+            if(savedSize!=""){
+                $('#Zoom').css('font-size', savedSize);
+                switch(savedSize){
+                    case smallFont: $(".smallFont").addClass("curFont");
+                        break;
+                    case medFont: $(".medFont").addClass("curFont");
+                        break;
+                    case largeFont: $(".largeFont").addClass("curFont");
+                        break;
+                    default: $(".medFont").addClass("curFont");
+                }
+            }else {
+                $('#Zoom').css('font-size', medFont);
+                $(".medFont").addClass("curFont");
+            }
+
+        }
+    </script><script type="text/javascript">
+        $(document).ready(function() {
+            fontResizer('10px','14px','16px');
+        });
+    </script><script type="text/javascript">function ChangeColor(ColorName)    {  document.getElementById("c").style.background = ColorName;}	</script>
+</head>
+<body>
+<input id="Chid" value="5149868" type="hidden"><!-Head-><!-Head-><!--<style>
+.logo {float: left; margin-top: 20px;}
+.logo img{ width:527px;height:97px;}
+.nav h3 a{display: block;color:#FF0000;font-family: "Microsoft Yahei";font-size: 17px;height: 40px;background: url(/images/nav_1.png);}
+.nav .on h3 a{background: url(/images/nav_2.png); color:#0974b9;font-family: "Microsoft Yahei";font-size: 17px;}
+</style>--><style>
+.logo img{ width:527px;height:97px;}
+.navBar{margin-top: 5px;}
+.ss{margin-top: 70px;}
+.logo{ margin-top: 20px;}
+</style>
+<script type="text/javascript">$ ('. wx'). on ('click', function () {
+                        layer.open ({
+                            type: 1,
+                            area: ['360px', '360px'],
+                            title: false, // Do not show title
+                            shadeClose: true,
+                            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+                        });
+                    });
+                </script><div class="header" style="position:relative;"><!-Top-><div class="top">
+				<dl>
+<dt>
+						<ul>
+<li>
+<span id="labelTime"></span><script type="text/javascript"> ShowDateTime();</script>
+</li>
+							<li class="tianqi">
+								 <iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=U8B50DD739&amp;cid=CHGZ000000&amp;l=zh-CHS&amp;p=SMART&amp;a=0&amp;u=C&amp;s=4&amp;m=2&amp;x=1&amp;d=1&amp;fc=&amp;bgc=&amp;bc=&amp;ti=0&amp;in=0&amp;li=" frameborder="0" scrolling="no" width="249" height="40" allowtransparency="true"></iframe>
+							</li>
+						</ul>
+</dt>
+					<dd>
+						<ul>
+<!--<li><a href="http://www.gzwza-cloud.com.cn/.m/turbowas/a.jsp?entryDomain=http%3A%2F%2Fwww.gzhfpc.gov.cn" title="Accessible browsing">Accessible browsing</a></li>
+							<li>|</li>--><li><a href="javascript:void(0)" onclick="SetHome(this,window.location)" title="Setup as front page">Setup as front page</a></li>
+							<li>|</li>
+							<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)" title="Add to favorites">Add to favorites</a></li>
+							<li>|</li>
+							<li><a href="http://www.gzhfpc.gov.cn/syqt_500663/rssdy/">RSS feed</a></li>
+							<li>|</li>							
+							<li>
+									<a href="" onmouseover="ShowDiv('2016wbss')" onmouseout="HinDiv('2016wbss')">Mobile version</a>
+									<div id="2016wbss" style="display: none;z-index: 10000;position: absolute;margin-top: 20px;">
+										<img src="/images/wsew.png" width="150px" height="150px" ignore="1">
+</div>
+								</li>
+						<script type="text/javascript">// popup hidden layer
+function ShowDiv (show_div) {
+document.getElementById (show_div) .style.display = 'block';
+}
+
+function HinDiv (show_div) {
+document.getElementById (show_div) .style.display = 'none';
+}</script>
+</ul>
+</dd>
+				</dl>
+</div><!-Header content-><div class="banner">
+				<div class="logo">
+					<img src="/images/logo_wjw0808.png" ignore="1">
+</div>
+				<div class="ss">
+    <input class="search-input" type="text" placeholder="please enter keyword to search" id="keyword" name="keyword" onkeydown="EnterSub(event);"><a href="javascript:;" class="btn_search" id="s-btn" onclick="sub()"></a><!-Search Jump-><script type="text/javascript">
+    function refocus() {
+        var getquery = document.getElementById("keyword");
+        getquery.value = "";
+        getquery.autocomplete = "off";
+        getquery.focus();
+
+    }
+
+    function reblur() {
+        var getquery = document.getElementById("keyword");
+        if(getquery.value == "") {
+            getquery.value = "please enter keyword to search";
+        }
+    }
+    String.prototype.trim = function() {
+        return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+
+    function sub () {
+        // Required, first convert the text to UTF-8
+        document.charset ="utf-8";
+        var fixvalue = document.getElementById("keyword").value;
+        fixvalue = fixvalue.replace(/\~|\!|\*|\?|\^|\\|\(|\)|\[|\]|\+|\-|\:|\{|\}|\"/g, "");
+        if(fixvalue.trim() == ""||fixvalue=="please enter keyword to search") {
+            document.getElementById("keyword").value = "";
+            alert("Keywords cannot be empty!");
+            return false;
+        } else {
+            window.open ('/ search.html? keyword =' + encodeURI (fixvalue)); // Pass in parameters
+        }
+        return false;
+    }
+    // Enter the submission method
+    function EnterSub () {
+        var len = arguments.length;
+        var event;
+        if (len == 1) {
+            event = arguments [0];
+        }
+        var evt = event? event: (window.event? window.event: null);
+        if (evt.keyCode == 13) {
+            // Required, first convert the text to UTF-8
+            document.charset ="utf-8";
+            var fixvalue = document.getElementById("keyword").value;
+            fixvalue = fixvalue.replace(/\~|\!|\*|\?|\^|\\|\(|\)|\[|\]|\+|\-|\:|\{|\}|\"/g, "");
+            if(fixvalue.trim() == "") {
+                document.getElementById("keyword").value = "";
+                alert("Keywords cannot be empty!");
+                return false;
+            } else {
+                 window.open ('/ search.html? keyword =' + encodeURI (fixvalue)); // Pass in parameters
+                //window.open('/site/gzhfpc/search.html?siteId=240&searchWord= '+ encodeURI (fixvalue)); // Pass in parameters
+            }
+            return false;
+        }
+    }</script>
+</div>
+			</div>
+			<div class="navBar">
+				<ul class="nav clearfix">
+<li id="m1" class="m">
+						<h3><a href="/"><i></i><span>Home</span></a></h3>
+					</li>	
+					<li id="m2" class="m">
+						<h3><a href="http://www.gzhfpc.gov.cn/xwzx_500663/"><i></i><span>News Center</span></a></h3>
+						<div class="sub">
+							<div class="xt_con">
+								<ul>
+<li class="xt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/ttxw/"><span>headline News</span></a></li>
+									<li class="xt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/zwyw/"><span>Government affairs</span></a></li>
+									<li class="xt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/sndt/"><span>Provincial News</span></a></li>									
+									<li class="xt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/spzl/"><span>Video column</span></a></li>
+									<li class="xt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/tzgg/"><span>announcement</span></a></li>
+									<li class="xt_hover"><a href="http://www.gov.cn/zhengce/index.htm" target="_blank"><span>State Council documents</span></a></li>
+									<li class="xt_hover"><a href="http://www.guizhou.gov.cn/zwgk/zcfg/szfwj_8191/szfl_8192/index.html" target="_blank"><span>Provincial Government Documents</span></a></li>
+									<li class="xt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/yqtb/"><span>Outbreak notification</span></a></li>
+							    </ul>
+</div>		
+						</div>
+					</li>	
+					<li id="m3" class="m">
+						<h3><a href="http://www.gzhfpc.gov.cn/zwgk_500663/"><i></i><span>Open government affairs</span></a></h3>
+						<div class="sub">
+							<div class="zt_con">
+								<ul>
+<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkzn/"><span>Information Disclosure Guide</span></a></li>
+									<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkml/"><span>Information disclosure directory</span></a></li>
+									<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/ysqgk/"><span>Open upon request</span></a></li>
+									<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkzd/"><span>Information disclosure system</span></a></li>
+									<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgknb/"><span>Annual Information Disclosure Report</span></a></li>
+									<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkyjx/"><span>Information disclosure suggestion box</span></a></li>
+									<li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zwgk_500663/ldzc/"><span>Window of leadership</span></a></li>
+                                                                         <li class="zt_hover"><a href="http://www.gzhfpc.gov.cn/zfxxgk/"><span>Government Information Disclosure</span></a></li>
+							    </ul>
+</div>		
+						</div>
+					</li>	
+					<li id="m4" class="m">
+						<h3><a href="http://www.gzhfpc.gov.cn/gzcy_500663/"><i></i><span>public participation</span></a></h3>
+						<div class="sub">
+							<div class="gt_con">
+								<ul>
+<li class="gt_hover"><a href="http://www.gzhfpc.gov.cn/gzcy_500663/zwxx/"><span>Government Mailbox</span></a></li>
+									<li class="gt_hover"><a href="/gzcy_500663/zjdc/wsdc/?num=1"><span>Online survey</span></a></li>
+<li class="gt_hover"><a href="/gzcy_500663/zjdc/yjzj/?num=3"><span>Call for opinions</span></a></li>
+									<li class="gt_hover"><a href="http://weibo.com/u/3458987284?is_hot=1" target="_blank"><span>Government microblogging</span></a></li>
+									<li class="gt_hover"><a href="javascript:;" class="wx"><span>Government WeChat</span></a></li>
+									<!--<li class="gt_hover"><a href="http://www.gzhfpc.gov.cn/gzcy_500663/zxft/"><span>Online interview</span></a></li>-->
+									<li class="gt_hover"><a href="http://www.gzhfpc.gov.cn/gzcy_500663/hygq/"><span>Respond to concerns</span></a></li>
+									<li class="gt_hover"><a href="http://www.gzhfpc.gov.cn/gzcy_500663/xwfbh/"><span>Press conference</span></a></li>
+									<li class="gt_hover"><a href="http://www.gzhfpc.gov.cn/gzcy_500663/cjwtzsk/"><span>FAQ Knowledge Base</span></a></li>								
+								</ul>
+<!--script type="text/javascript">$ ('. wx'). on ('click', function () {
+        layer.open ({
+            type: 1,
+            area: ['360px', '360px'],
+            title: false, // Do not show title
+            shadeClose: true,
+            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+        });
+    });
+</script-->
+</div>
+						</div>
+					</li>	
+					<li id="m5" class="m">
+						<h3><a href="http://www.gzhfpc.gov.cn/zxfw_500663/"><i></i><span>online service</span></a></h3>
+						<div class="sub">
+							<div class="zxt_con">
+								<ul>
+<li class="zxt_hover"><a href="http://zwfw.guizhou.gov.cn/bmqjd.do?ocode=4130465240220517062&amp;areacode=520000/" target="_blank"><span>Guizhou Government Service Network</span></a></li>
+									<li class="zxt_hover"><a href="http://www.gzegn.gov.cn/gzszwfww/bmbs/showDetail.do?webId=1&amp;deptCode=4130465240220517062" target="_blank"><span>Administrative approval</span></a></li>
+									<li class="zxt_hover"><a href="http://www.gzhfpc.gov.cn/zxfw_500663/ggfw/"><span>Public Service</span></a></li>
+								
+																							
+								</ul>
+</div>
+						</div>
+					</li>	
+					<li id="m6" class="m">
+						<h3><a href="http://www.gzhfpc.gov.cn/zdgz_500663/"><i></i><span>Key work</span></a></h3>
+						<div class="sub">
+							<div class="zdt_con">
+								<ul>
+<li class="zdt_hover"><a href="http://www.gzhfpc.gov.cn/zdgz_500663/ylgl/"><span>Medical management</span></a></li>
+						
+									<li class="zdt_hover"><a href="http://www.gzhfpc.gov.cn/zdgz_500663/ygdx/"><span>Change direction</span></a></li>
+									<li class="zdt_hover"><a href="http://www.gzhfpc.gov.cn/zdgz_500663/xhgz/"><span>Association work</span></a></li>
+									<!--li class="zdt_hover"><a href="http://www.gzhfpc.gov.cn/zdgz_500663/ylgg/"><span>Medical advertisement</span></a></li-->
+                                                                        <li class="zdt_hover"><a href="http://www.gzhfpc.gov.cn/xwzx_500663/yqtb/"><span>Outbreak notification</span></a></li>															
+								</ul>
+</div>
+						</div>
+					</li>
+					<li id="m8" class="m">
+						<h3><a href="http://58.16.65.11:9091/wjw/public/statistics" target="_blank"><i></i><span>Data disclosure</span></a></h3>
+						<div class="sub">
+							<div class="zdt_con">
+								<ul>
+<li class="zdt_hover"><a href="http://58.16.65.11:9091/wjw/public/statistics" target="_blank"><span>Outbreak public</span></a></li>
+									<li class="zdt_hover"><a href="http://58.16.65.11:9091/wjw/public/hospitalStatistics" target="_blank"><span>List of Chinese Medicine Hospitals</span></a></li>
+<li class="zdt_hover"><a href="http://data.guizhou.gov.cn/list.html?orgId=1474445138442" target="_blank"><span>Data open</span></a></li>
+																						
+								</ul>
+</div>
+						</div>
+					</li>
+					<li id="m7" class="m">
+						<h3><a href="http://www.gzhfpc.gov.cn/ztzl_500663/"><i></i><span>Special Column</span></a></h3>
+						<!--div class="sub">
+							<div class="ztt_con">
+								<ul>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/ygzc/"><span>Window of Medical Reform</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/rkyjk/"><span>Population and health</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/aqsc/"><span>Safe Production</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/sdgysdcgzf/"><span>Mountain park province colorful Guizhou style</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/fbfk/"><span>Anti-terrorism counter-terrorism self-help mutual rescue knowledge</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/jbggwsfw/"><span>Basic public health services</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/yszj/"><span>Academician Expert Medical and Health Aid Action</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="http://www.gzgov.gov.cn:88/wtpgt/index.shtml" target="_blank"><span>Government website problem exposure platform</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="http://www.ccdi.gov.cn/special/bgzq5/index.html" target="_blank"><span>Supervise report exposure area</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/qyrcjh/"><span>Guizhou Medical Talent Program</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/yywstzgg/"><span>Guizhou Medical and Health System Reform</span></a></li>
+								</ul>
+							</div>
+						</div-->
+					</li>
+				</ul>
+</div>
+		<script type="text/javascript">
+			jQuery(".nav").slide({ 
+					type:"menu", // Effect type
+titCell:".m", // mouse trigger object
+targetCell:".sub", // effect object, must be contained by titCell
+effect:"slideDown"// Drop-down effect
+delayTime: 300, // effect time
+triggerTime: 0, // Mouse delay trigger time
+returnDefault: true // Return to the default state
+});</script>
+</div>
+<div class="content-main">
+    <div class="dqwz">your current location:<a href="../../../" title="Home" class="CurrChnlCls">Home</a> » <a href="../../" title="News Center" class="CurrChnlCls">News Center</a> » <a href="../" title="announcement" class="CurrChnlCls">announcement</a>
+    </div>
+    <div class="body_content" id="c">
+        <div class="title">
+            <h1>February 16-17, Guizhou Province area information of confirmed cases of new crown virus pneumonia</h1>
+            <h2></h2>
+            <div class="toolbar">
+                <script type="text/javascript">var zz = '';
+                    if (zz! = '') {
+                        document.write ( 'OF:' + zz); document.write ( '& emsp;');
+                    }</script><script type="text/javascript">
+                    var ly="Publicity Office";
+                    if (ly! = '' && ly! = 'null') {
+                        document.write ('Source: Publicity Office & nbsp; & nbsp;');
+                    } else {
+                        document.write ('Source: Healthy Guizhou & nbsp; & nbsp;');
+                    }</script>release time:<script type="text/javascript">var pubdata = 'February 19, 2020 16:43:32';
+                    if (pubdata! = '') {
+                        document.write (pubdata);
+                    }</script>
+
+                <!-Edit: Shi Lei, Health Commissioner->-<!-Clicks:<em id="dbfwl"><iframe id="dbfwlIf" style="display:none" src="/count/index?id=50131225&siteid=500663"></iframe></em>Times & emsp;-><script type="text/javascript">
+                $("#dbfwlIf").load(function() {
+                var thisnum = $("#dbfwlIf").contents().find("body").html().replace('document.write(','').replace(');','');
+                thisnum = thisnum.toString();
+                $("#dbfwl").append(thisnum);
+                });
+                </script><a href="javascript:window.print();">print this page</a> <a href="javascript:window.opener=null;window.close()">Close this page</a>
+                Font:<span class="smallFont">small</span>
+                <span class="medFont">in</span>
+                <span class="largeFont curFont">Big</span> 
+                <i style="padding-left:10px">Eye protection:<input onclick="ChangeColor('#F9F6AF')" type="image" name="bgcolor" src="/images/110827103140057.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#9DDBF4')" type="image" name="bgcolor22" src="/images/110827103140099.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#DEDEDE')" type="image" name="bgcolor2" src="/images/110827103140184.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#F9D1D9')" type="image" name="bgcolor2" src="/images/110827103140215.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#E4C8F8')" type="image" name="bgcolor2" src="/images/110827103140245.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#ffffff')" type="image" name="bgcolor2" height="13" src="/images/110827103140292.gif" width="13" align="absmiddle"></i>
+            </div>
+        </div>
+        <div class="content" style="width: 1110px;margin: 0 auto;">
+
+
+            <font id="Zoom">
+                <div class="view TRS_UEDITOR trs_paper_default trs_word trs_key4format">
+<p style="text-indent: 2em;">In order to make it easier for the general public to grasp the area of confirmed cases in real time, and effectively promote the implementation of group prevention and control, the day after the confirmed case was released at the provincial level, the cities (states) have publicized the main symptoms during the case. Under the premise of the activity area, one confirmed case in the province from February 16th to 17th is now announced as follows:</p>
+<p style="text-indent: 2em;">1 case in Guiyang</p>
+<p style="text-indent: 2em;">Patient Wang Mouxi, male, 19 years old, currently lives in the G1 group of Zhongtian Future Ark, Shuidong Community, Yunyan District, and was diagnosed on February 9 as the son of Wang Mouzhong and Xiong Mou. On January 18, flight MU8911 departed from Taipei, then transferred to CZ8504 via Nanjing Lukou International Airport and returned to Guiyang. On January 23, I took a private car to buy seafood at the Guizhou Yuliao Aquatic Products Comprehensive Market, and went to Yitian City to eat and shop (all wearing masks during the whole day out), and then returned home; January 24-30, I did n’t go out at home ; On January 31, take a taxi to another black tea house (Wenchang North Road) for a party, then go to Xixifu Bookstore (Nanguo Huajin Store) to buy books, Yibei Town (Nanguo Huajin Store) to buy drinks, and then take a taxi Return to home (wear a mask during the whole day of travel); February 1-7, did not go home; February 8 by private car to the Provincial People's Hospital for treatment, and nucleic acid testing, isolation treatment until February 11; He was transferred to Jiangshan Hospital of Guizhou Province for isolation and treatment on February 11; he was diagnosed with a confirmed case on February 16 and is currently being treated in Jiangshan Hospital of Guizhou Province for isolation.</p>
+<p style="text-indent: 2em;">Source: Guiyang City Office of the Leading Group for Pneumonia Prevention and Control of New Coronavirus Infection.</p>
+</div>
+            </font>
+        </div>
+        <div class="bdsharebuttonbox" style="width: 1110px;margin: 0 auto;">
+            <a href="#" class="bds_more" data-cmd="more">share to:</a>
+            <a title="Share to QQ space" href="#" class="bds_qzone" data-cmd="qzone"></a>
+            <a title="share to Sina Weibo" href="#" class="bds_tsina" data-cmd="tsina"></a>
+            <a title="Share on Tencent Weibo" href="#" class="bds_tqq" data-cmd="tqq"></a>
+            <a title="Share to Renren" href="#" class="bds_renren" data-cmd="renren"></a>
+            <a title="Share on WeChat" href="#" class="bds_weixin" data-cmd="weixin"></a>
+            <a title="Share to QQ friends" href="#" class="bds_sqq" data-cmd="sqq"></a>
+            <a title="Share to Email Share" href="#" class="bds_mail" data-cmd="mail"></a>
+            <a title="Share to copy URL" href="#" class="bds_copy" data-cmd="copy"></a>
+            <a title="Share to print" href="#" class="bds_print" data-cmd="print"></a>
+            <a title="Share to One Click Share" href="#" class="bds_mshare" data-cmd="mshare"></a>
+        </div>
+        <script type="text/javascript">
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mail","copy","print","mshare"],"viewText":"share to:","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mail","copy","print","mshare"]}};with(document){0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/3600000)]};
+        </script><div class="KeysList">
+            <!--div class="left">Keywords:<a onclick='javascript:window.open("/index/search.html?keyword=%e8%b0%83%e7%a0%94")' href="javascript:;">Research</a>
+            </div-->
+            <div class="right">
+
+                <a href="http://mail.qq.com/cgi-bin/qm_share?url=./t20200219_50131225.html&amp;to=qqmail&amp;desc=&amp;summary=&amp;title=2%E6%9C%8816%E6%97%A5%E2%80%9417%E6%97%A5%E8%B4%B5%E5%B7%9E%E7%9C%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%E7%A1%AE%E8%AF%8A%E7%97%85%E4%BE%8B%E6%B4%BB%E5%8A%A8%E5%8C%BA%E5%9F%9F%E4%BF%A1%E6%81%AF&amp;site=&amp;pics=" target="_blank" class="box_02">I want to recommend</a> 
+                <!--a href="/syqt/wzjc/" class="box_03">I want to correct</a-->
+
+                <a class="box_02" href="/syqt_500663/rssdy/index.html" target="_blank">custom made</a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div id="prevpage">
+                <span>Previous:</span><a href="javascript:;" id="no1">no</a>
+                
+            </div>
+            <div id="prevpage">
+                <span>Next:</span><a href="javascript:;" id="no2">no</a>
+                
+                    <script type="text/javascript">
+                        var  str="";
+                        var str_1 = "./t20200219_50130100.html";
+                        var str_4 = 'The epidemic situation of new coronavirus pneumonia in Guizhou Province at 0-12 on February 19, 2020';
+                        if (str_4! ="")
+                        {
+                            jQuery("#no2").hide();
+                            if (str=="") {
+                                document.write('<a  href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a>');
+                            } else {
+                                document.write('<a  href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a>');
+                            }
+                        }
+                    </script>
+</div>
+        </div>
+        <div class="information">
+            <h1><span>Related Information</span></h1>
+            <ul><script type="text/javascript">
+                    var key="";
+                    if(key!=''&&key!='null'){
+                    
+                    }else{
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200219_50130100.html";
+                        var str_4 = 'The epidemic situation of new coronavirus pneumonia in Guizhou Province at 0-12 on February 19, 2020';
+                        var str_2 = '2020-02-19';
+                        if (str =="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200219_50117301.html";
+                        var str_4 = 'Notice on Printing and Distributing the Key Points of Guizhou Provincial Occupational Construction and Health Work in 2020';
+                        var str_2 = '2020-02-19';
+                        if (str =="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200219_50116372.html";
+                        var str_4 = 'Notice on Suspension of Qualification for Laboratory Occupational Health Technical Services of Guizhou Coalfield Geology Bureau';
+                        var str_2 = '2020-02-19';
+                        if (str =="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200219_50042146.html";
+                        var str_4 = 'The epidemic situation of new coronavirus pneumonia in Guizhou Province from 12 to 24 February 2020'
+                        var str_2 = '2020-02-19';
+                        if (str =="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200218_49962617.html";
+                        var str_4 = 'The epidemic situation of new coronavirus pneumonia in Guizhou Province at 0-12 on February 18, 2020';
+                        var str_2 = '2020-02-18';
+                        if (str =="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                    }
+                </script></ul>
+</div>
+    </div>
+
+</div><!-Bottom-><!-Bottom-><div class="footer"><!-Friendly Link-><div class="yqlj">
+				<ul><!--<li><a href=""><img src="yqlj1.jpg" /></a></li>
+					<li><a href=""><img src="yqlj2.jpg" /></a></li>
+					<li style="margin-right: 0px;"><a href=""><img src="./images/yqlj3.jpg" /></a></li>--></ul>
+</div><!-Bottom content-><div class="db" style="height:210px;">
+				<div class="dbnr" style="width: 800px;">
+					<div class="dbnr_lf">
+						<ul><!-The website is wrong-><li class="jc">
+								<script id="_jiucuo_" sitecode="5200000034" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js?v=0.1968206404708326"></script>
+</li>
+							<li class="hx">
+								<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/60408941/CA240000000604089410001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</li>
+						</ul>
+</div>
+					<div class="dbnr_lr" style="width:590px;">
+							<ul class="footer_p1">
+<li><a href="http://www.gzhfpc.gov.cn/syqt_500663/wzbz/">Website help</a></li>
+								<li>|</li>
+								<li><a href="http://www.gzhfpc.gov.cn/syqt_500663/wzdt/">Sitemap</a></li>
+								<li>|</li>
+								<li><a href="http://www.gzhfpc.gov.cn/syqt_500663/gywm/">about us</a></li>
+								<li>|</li>
+								<li><a href="http://www.gzhfpc.gov.cn/syqt_500663/lxfs/">contact details</a></li>
+      						
+							</ul>
+<p class="footer_p2">Organizer: Guizhou Provincial Health and Health Committee Government website identification code: 5200000034</p>
+							<p class="footer_p2">Chinese domain name: Guizhou Provincial Health Committee. Government Affairs.cn</p>
+							<p class="footer_p2">Contact address: Provincial Health and Health Commission General Office, 8th Floor, Building 7</p>
+							<p class="footer_p2">Phone: Working hours (Monday to Friday 8: 30-18: 00): 0851—86826829 Non-working hours: 0851-86870000</p>
+							<p class="footer_p2">Management unit: Guizhou Provincial Population Information Center 2077842460@qq.com</p> 
+<div style="width:300px;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52010302000528" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/images/wjwba_icon.png" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">Guigang Public Security No. 52010302000528</p></a>
+		 	</div>
+
+							<!--<p class="footer_p2">								
+								<span>Technical Support:<a href="http://www.bohoog.com/" target="_blank">Guizhou Duocuobohong Technology Co., Ltd.</a></span>
+							</p>-->
+<p style="display: none;">
+						<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254814058'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254814058%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></p>
+					</div>
+				</div>
+			</div>
+		</div><!-New-><style type="text/css">
+.lf-aside {position: fixed;top:214px;left:50%;margin-left: 610px; background: #fff;}
+.lf-aside>a {display: block; width: 80px;height:70px; text-align:center; overflow:hidden; margin-bottom:5px; border-bottom: 1px solid #d2d2d2;}
+.lf-aside>a img {width:65px}
+.lf-aside>a i{ display:block; width:65px; height:50px; background: url(/images/RightBar.png) no-repeat;}
+.lf-aside>a.wza i{ background-position:-5px -350px; }
+.lf-aside>a.lm_wx i{ background-position:0px -280px;}
+.lf-aside>a.lm_wb i{ background-position:0px -110px;}
+.lf-aside>a.lm_colose{ height:20px; border-bottom: none;}
+.lf-aside>a.lm_colose img{ width:40px;}
+.lf-aside .znwd {padding-top:48px;box-sizing: border-box;}
+.lf-aside .znwd img {width:33px; position: absolute;
+    top: 8px;
+    left: 15px;}
+
+</style>
+<div class="lf-aside">
+	
+    <!--<a href="http://wza.gzhfpc.gov.cn/" target="_blank" class="wza"><i></i>Accessibility<img src="/images/wza.png" alt="Accessibility" /></a>--> 
+        <a class="znwd" href="http://znwd.gzhfpc.gov.cn"><img src="/images/znwd.png" alt="">Smart Q & A</a>  
+	<a href="javascript:;" class="xiao lm_wx"><i></i>WeChat<!--<img src="/images/zwwx2.png" alt="WeChat" />--></a>
+	<a class="xiao lm_wb" href="javascript:;"><i></i>Weibo<!--<img src="/images/zwwb2.png" alt="Weibo" />--></a>
+        <a href="javascript:;" style="height: 265px;"><img src="/images/shce.jpg" style="width: 80px;"></a>    
+      <a href="javascript:;" class="lm_colose"><img src="http://www.gzhfpc.gov.cn/images/colose_lm.png" width="40"></a>
+             
+</div>
+<script type="text/javascript">$ ('. lm_wx'). on ('click', function () {
+layer.open ({
+type: 1,
+area: ['360px', '360px'],
+title: false, // Do not show title
+shadeClose: true,
+content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+});
+});
+$ ('. lm_wb'). on ('click', function () {
+layer.open ({
+type: 1,
+area: ['360px', '360px'],
+title: false, // Do not show title
+shadeClose: true,
+content: '<img src="/images/lm_weibo.png" ignore="1" style="height: 344px;width:344px" />'
+			        });
+			    });
+				
+				$(".lm_colose").on('click',function (){
+					$(".lf-aside").hide();				
+				})
+</script><script id="_trs_ta_js" src="//ta.trs.cn/c/js/ta.js?mpid=1000" async="async" defer></script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=61789191" charset="UTF-8"></script><script language="JavaScript">var _trackDataType = "web";var _trackData = _trackData || [];</script><!--<script type="text/javascript" charset="utf-8" id="kpyfx_js_id_10000790" src="//fxsjcj.kaipuyun.cn/count/10000790/10000790.js"></script>--><!-The website is wrong-><script id="_jiucuo_" sitecode="5200000034" src="/images/jiucuo.js"></script><script>
+$(document).ready(function () {
+            for (var i = 0; i < document.links.length; i++) {
+                var url = document.links[i].href.toLowerCase();
+                if (url.indexOf("http://localhost") == -1 && url.indexOf("gzhfpc.gov.cn") == -1&& url.indexOf("http://220.197.219.147")== -1 && url != "gzhfpc.bohoog.com" &&url.indexOf("javascript:") == -1 && url != "#" && !document.links[i].onclick) {
+                    document.links[i].onclick = function () {
+                        return confirm("The link you visited is about to leave the "Guizhou Provincial Health and Health Commission Portal Website". Do you want to continue?")
+                    };
+                }
+            }
+        });
+</script><!-Bohong probe code-><script type="text/javascript">
+    var _wapaq = _wapaq || [];
+    _wapaq.push(['trackPageView']);
+    (function() {
+        var u = "http://webprobe.octodata.com.cn/";
+        _wapaq.push(['setTrackerUrl', u + 'tracker']);
+        _wapaq.push(['setSiteId', 86]);
+        _wapaq.push(['setDiscardUrlParams', true]);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = 'http://bazhuawangluo.oss-cn-hangzhou.aliyuncs.com/ds2.js?v=' + new Date().getUTCDay();
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+</body>
+</html>
+

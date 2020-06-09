@@ -1,0 +1,634 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><title> Epidemic situation of new coronavirus pneumonia in Guizhou Province from 12 to 24 on February 12, 2020 </title><meta name="SiteName" content="中国,贵州省卫生健康委员会"><meta name="SiteDomain" content="http://www.gzhfpc.gov.cn"><meta name="SiteIDCode" content="5200000034"><meta name="ColumnName" content="通知公告"><meta name="ColumnType" content="通知公告"><meta name="ArticleTitle" content="2020年2月12日12—24时贵州省新型冠状病毒肺炎疫情情况"><meta name="DOCRELTIME" content="2020-02-13 08:37:43"><meta name="ContentSource" content=""><meta name="Keywords" content="Epidemic situation of new coronavirus pneumonia in Guizhou Province from 12 to 24 on February 12, 2020"><meta name="Author" content=""><meta name="Description" content=""><meta name="Image" content=""><meta name="Url" content="http://www.gzhfpc.gov.cn/xwzx_500663/tzgg/202002/t20200213_48770147.html"><link rel="stylesheet" href="/images/nry.css"><!--<script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/18eec2f64c7d1e4df2f575cfed754977/allmobilize.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="http://gmwz-1251053291.file.myqcloud.com/hnV3rq55cduGp6XYfXqmoJNp0aJ9ntWag4aNaX-4eWyCmq2gxaKG3ZyV0NeSm3xteaGqrIF3sGo.js"></script>--><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" media="handheld" href="#"><script src="/images/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8" ignore="1"></script><script src="/images/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8" ignore="1"></script><script type="text/javascript" src="/tools/layui/layui.js"></script><script src="/tools/js/layer/layer.js" type="text/javascript"></script><script>
+function cutstr(str, len) {
+    var str_length = 0;
+    var str_len = 0;
+    str_cut = new String();
+    str_len = str.length;
+    for (var i = 0; i < str_len; i++) {
+        a = str.charAt(i);
+        str_length++;
+        if (escape(a).length > 4) {
+            //中文字符的长度经编码之后大于4  
+            str_length++;
+        }
+        str_cut = str_cut.concat(a);
+        if (str_length >= len) {
+            str_cut = str_cut.concat("...");
+            return str_cut;
+        }
+    }
+    //如果给定字符串小于指定长度，则返回源字符串；  
+    if (str_length < len) {
+        return str;
+    }
+}
+</script><script>
+		function getMyDate(timestamp) {
+            var date = new Date(timestamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+            Y = date.getFullYear() + '-';
+            M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+            D = date.getDate() + ' ';
+            h = date.getHours() + ':';
+            m = date.getMinutes() + ':';
+            s = getzf(date.getSeconds());
+            return Y+M+D;
+        }
+        function getzf(num){  
+          if(parseInt(num) < 10){ num = '0'+num; }
+          return num;  
+        }
+        function GetStatus(status){
+            if(status == "4"){
+                status = "待办理";
+            }else if(status == "5"){
+                status = "待审核";
+            }else if(status == "7"){
+                status = "已办结";
+            }else{
+                status = "办理中";
+            }
+            return status;
+        }
+	</script><script type="text/javascript">
+			var CalendarData = new Array(20);
+    var madd = new Array(12);
+    var TheDate;
+    var tgString = "甲乙丙丁戊己庚辛壬癸";
+    var dzString = "子丑寅卯辰巳午未申酉戌亥";
+    var numString = "一二三四五六七八九十";
+    var monString = "正二三四五六七八九十冬腊";
+    var weekString = "日一二三四五六";
+    var sx = "鼠牛虎兔龙蛇马羊猴鸡狗猪";
+    var cYear;
+    var cMonth;
+    var cDay;
+    var cHour;
+    var cDateString;
+    var cDateYear;
+    var cDateHour;
+    var DateString;
+    var Browser = navigator.appName;
+    function init() {
+        CalendarData[0] = 0x41A95;
+        CalendarData[1] = 0xD4A;
+        CalendarData[2] = 0xDA5;
+        CalendarData[3] = 0x20B55;
+        CalendarData[4] = 0x56A;
+        CalendarData[5] = 0x7155B;
+        CalendarData[6] = 0x25D;
+        CalendarData[7] = 0x92D;
+        CalendarData[8] = 0x5192B;
+        CalendarData[9] = 0xA95;
+        CalendarData[10] = 0xB4A;
+        CalendarData[11] = 0x416AA;
+        CalendarData[12] = 0xAD5;
+        CalendarData[13] = 0x90AB5;
+        CalendarData[14] = 0x4BA;
+        CalendarData[15] = 0xA5B;
+        CalendarData[16] = 0x60A57;
+        CalendarData[17] = 0x52B;
+        CalendarData[18] = 0xA93;
+        CalendarData[19] = 0x40E95;
+        madd[0] = 0;
+        madd[1] = 31;
+        madd[2] = 59;
+        madd[3] = 90;
+        madd[4] = 120;
+        madd[5] = 151;
+        madd[6] = 181;
+        madd[7] = 212;
+        madd[8] = 243;
+        madd[9] = 273;
+        madd[10] = 304;
+        madd[11] = 334;
+    }
+    function GetBit(m, n) {
+        return (m >> n) & 1;
+    }
+    function e2c() {
+        TheDate = new Date();
+        var total, m, n, k;
+        var isEnd = false;
+        var tmp = TheDate.getYear();
+        if (tmp < 1900) tmp += 1900;
+        total = (tmp - 2001) * 365
+          + Math.floor((tmp - 2001) / 4)
+          + madd[TheDate.getMonth()]
+          + TheDate.getDate()
+          - 23;
+        if (TheDate.getYear() % 4 == 0 && TheDate.getMonth() > 1)
+            total++;
+        for (m = 0; ; m++) {
+            k = (CalendarData[m] < 0xfff) ? 11 : 12;
+            for (n = k; n >= 0; n--) {
+                if (total <= 29 + GetBit(CalendarData[m], n)) {
+                    isEnd = true;
+                    break;
+                }
+                total = total - 29 - GetBit(CalendarData[m], n);
+            }
+            if (isEnd) break;
+        }
+        cYear = 2001 + m;
+        cMonth = k - n + 1;
+        cDay = total;
+        if (k == 12) {
+            if (cMonth == Math.floor(CalendarData[m] / 0x10000) + 1)
+                cMonth = 1 - cMonth;
+            if (cMonth > Math.floor(CalendarData[m] / 0x10000) + 1)
+                cMonth--;
+        }
+        cHour = Math.floor((TheDate.getHours() + 3) / 2);
+    }
+    function GetcDateString() {
+        var tmp = "";
+
+        if (cMonth < 1) {
+            tmp += "闰";
+            tmp += monString.charAt(-cMonth - 1);
+        }
+        else
+            tmp += monString.charAt(cMonth - 1);
+        tmp += "月";
+        tmp += (cDay < 11) ? "初" : ((cDay < 20) ? "十" : ((cDay < 30) ? "廿" : "卅"));
+        if (cDay % 10 != 0 || cDay == 10)
+            tmp += numString.charAt((cDay - 1) % 10);
+        tmp += "    ";
+
+        cDateString = tmp;
+        return tmp;
+    }
+    function GetcDateYear() {
+        var tmp = "";
+        tmp += tgString.charAt((cYear - 4) % 10);       //年干  
+        tmp += dzString.charAt((cYear - 4) % 12);       //年支  
+        tmp += "年(";
+        tmp += sx.charAt((cYear - 4) % 12);
+        tmp += ")   ";
+
+        cDateYear = tmp;
+        return tmp;
+    }
+    function GetcDataHour() {
+
+        var tmp = "";
+        if (cHour == 13) tmp += "夜";
+        tmp += dzString.charAt((cHour - 1) % 12);
+        tmp += "时";
+
+        cDateHour = tmp;
+        return tmp;
+    }
+    function GetDateString() {
+        var tmp = "";
+        var t1 = TheDate.getYear();
+        if (t1 < 1900) t1 += 1900;
+        tmp +="今天是："+t1
+                + "年"
+                + (TheDate.getMonth() + 1) + "月"
+                + TheDate.getDate() + "日   "
+                + TheDate.getHours() + ":"
+                + ((TheDate.getMinutes() < 10) ? "0" : "")
+                + TheDate.getMinutes() + ":"
+                + ((TheDate.getSeconds() < 10) ? "0" : "")
+                + TheDate.getSeconds();
+        //                + "   星期" + weekString.charAt(TheDate.getDay());
+        DateString = tmp;
+        return tmp;
+    }
+    function ShowDateTime() {
+        init();
+        e2c();
+        GetDateString();
+        GetcDateString();
+        GetcDateYear();
+        GetcDataHour();
+        var label = document.getElementById("labelTime");
+        label.innerHTML = DateString + "  " + " 农历："+cDateYear+ cDateString;
+        setTimeout(ShowDateTime, 1000);
+    }			
+		</script><script type="text/javascript">
+			function AddFavorite(sURL, sTitle) {
+				try {
+					window.external.addFavorite(sURL, sTitle)
+				} catch (e) {
+					try {
+						window.sidebar.addPanel(sTitle, sURL, "")
+					} catch (e) {
+						alert("加入收藏失败，请使用Ctrl+D进行添加")
+					}
+				}
+			}
+			 // 设置为主页
+                    function SetHome(obj, vrl) {
+                        try {
+                            obj.style.behavior = 'url(#default#homepage)';
+                            obj.setHomePage(vrl);
+                        }
+                        catch (e) {
+                            if (window.netscape) {
+                                try {
+                                    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                                }
+                                catch (e) {
+                                    alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                                }
+                                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                                prefs.setCharPref('browser.startup.homepage', vrl);
+                            } else {
+                                alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：" + vrl + "点击确定。");
+                            }
+                        }
+                    }
+</script><script type="text/javascript">
+                    $('.wx').on('click', function () {
+                        layer.open({
+                            type: 1,
+                            area: ['360px', '360px'],
+                            title: false, //不显示标题
+                            shadeClose: true,
+                            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+                        });
+                    });
+                </script><style>
+.nav .m{margin: 0px 28px 0px 8px;}
+</style><script type="text/javascript">
+        function fontResizer(smallFont,medFont,largeFont){
+
+            function clearSelected(){
+                $(".smallFont").removeClass("curFont");
+                $(".medFont").removeClass("curFont");
+                $(".largeFont").removeClass("curFont");
+            }
+
+            function saveState(curSize){
+                var date = new Date();
+                date.setTime(date.getTime()+(7*24*60*60*1000));
+                var expires = "; expires="+date.toGMTString();
+                document.cookie = "fontSizer"+"="+curSize+expires+"; path=/";
+            }
+
+            $(".smallFont").click(function(){
+                $('#Zoom').css('font-size', smallFont);
+                clearSelected();
+                $(".smallFont").addClass("curFont");
+                saveState(smallFont);
+            });
+
+            $(".medFont").click(function(){
+                $('#Zoom').css('font-size', medFont);
+                clearSelected();
+                $(".medFont").addClass("curFont");
+                saveState(medFont);
+            });
+
+            $(".largeFont").click(function(){
+                $('#Zoom').css('font-size', largeFont);
+                clearSelected();
+                $(".largeFont").addClass("curFont");
+                saveState(largeFont);
+            });
+
+            function getCookie(c_name){
+                if(document.cookie.length>0){
+                    c_start=document.cookie.indexOf(c_name + "=");
+                    if (c_start!=-1){
+                        c_start=c_start + c_name.length+1;
+                        c_end=document.cookie.indexOf(";",c_start);
+                        if(c_end==-1)c_end=document.cookie.length;
+                        return unescape(document.cookie.substring(c_start,c_end));
+                    }
+                }
+                return "";
+            }
+
+            var savedSize = getCookie('fontSizer');
+
+            if(savedSize!=""){
+                $('#Zoom').css('font-size', savedSize);
+                switch(savedSize){
+                    case smallFont: $(".smallFont").addClass("curFont");
+                        break;
+                    case medFont: $(".medFont").addClass("curFont");
+                        break;
+                    case largeFont: $(".largeFont").addClass("curFont");
+                        break;
+                    default: $(".medFont").addClass("curFont");
+                }
+            }else {
+                $('#Zoom').css('font-size', medFont);
+                $(".medFont").addClass("curFont");
+            }
+
+        }
+    </script><script type="text/javascript">
+        $(document).ready(function() {
+            fontResizer('10px','14px','16px');
+        });
+    </script><script type="text/javascript">function ChangeColor(ColorName)    {  document.getElementById("c").style.background = ColorName;}	</script></head><body><input id="Chid" value="5149868" type="hidden"><!--头部--><!--头部--><!--<style>
+.logo {float: left; margin-top: 20px;}
+.logo img{ width:527px;height:97px;}
+.nav h3 a{display: block;color:#FF0000;font-family: "微软雅黑";font-size: 17px;height: 40px;background: url(/images/nav_1.png);}
+.nav .on h3 a{background: url(/images/nav_2.png); color:#0974b9;font-family: "微软雅黑";font-size: 17px;}
+</style>--><style>
+.logo img{ width:527px;height:97px;}
+.navBar{margin-top: 5px;}
+.ss{margin-top: 70px;}
+.logo{ margin-top: 20px;}
+</style><script type="text/javascript">
+                    $('.wx').on('click', function () {
+                        layer.open({
+                            type: 1,
+                            area: ['360px', '360px'],
+                            title: false, //不显示标题
+                            shadeClose: true,
+                            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+                        });
+                    });
+                </script><div class="header" style="position:relative;"><!--顶部--><div class="top"><dl><dt><ul><li><span id="labelTime"></span><script type="text/javascript"> ShowDateTime();</script></li><li class="tianqi"><iframe src="http://www.thinkpage.cn/weather/weather.aspx?uid=U8B50DD739&amp;cid=CHGZ000000&amp;l=zh-CHS&amp;p=SMART&amp;a=0&amp;u=C&amp;s=4&amp;m=2&amp;x=1&amp;d=1&amp;fc=&amp;bgc=&amp;bc=&amp;ti=0&amp;in=0&amp;li=" frameborder="0" scrolling="no" width="249" height="40" allowtransparency="true"></iframe></li></ul></dt><dd><ul><!--<li><a href="http://www.gzwza-cloud.com.cn/.m/turbowas/a.jsp?entryDomain=http%3A%2F%2Fwww.gzhfpc.gov.cn" title="无障碍浏览">无障碍浏览</a></li>
+							<li>|</li>--><li> <a href="javascript:void(0)" onclick="SetHome(this,window.location)" title="Setup as front page">Setup as front page</a> </li><li> | </li><li> <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)" title="Add to favorites">Add to favorites</a> </li><li> | </li><li> <a href="http://www.gzhfpc.gov.cn/syqt_500663/rssdy/">RSS feed</a> </li><li> | </li><li> <a href="" onmouseover="ShowDiv('2016wbss')" onmouseout="HinDiv('2016wbss')">Mobile version</a> <div id="2016wbss" style="display: none;z-index: 10000;position: absolute;margin-top: 20px;"><img src="/images/wsew.png" width="150px" height="150px" ignore="1"></div></li><script type="text/javascript">
+							//弹出隐藏层
+							function ShowDiv(show_div) {
+								document.getElementById(show_div).style.display = 'block';
+							}
+
+							function HinDiv(show_div) {
+								document.getElementById(show_div).style.display = 'none';
+							}
+						</script></ul></dd></dl></div><!--头部内容--><div class="banner"><div class="logo"><img src="/images/logo_wjw0808.png" ignore="1"></div><div class="ss"><input class="search-input" type="text" placeholder="请输入搜索关键字" id="keyword" name="keyword" onkeydown="EnterSub(event);"><a href="javascript:;" class="btn_search" id="s-btn" onclick="sub()"></a><!-- 检索跳转 --><script type="text/javascript">
+    function refocus() {
+        var getquery = document.getElementById("keyword");
+        getquery.value = "";
+        getquery.autocomplete = "off";
+        getquery.focus();
+
+    }
+
+    function reblur() {
+        var getquery = document.getElementById("keyword");
+        if(getquery.value == "") {
+            getquery.value = "请输入搜索关键字";
+        }
+    }
+    String.prototype.trim = function() {
+        return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+
+    function sub() {
+        //必需，先将文本转换为utf-8
+        document.charset = "utf-8";
+        var fixvalue = document.getElementById("keyword").value;
+        fixvalue = fixvalue.replace(/\~|\!|\*|\?|\^|\\|\(|\)|\[|\]|\+|\-|\:|\{|\}|\"/g, "");
+        if(fixvalue.trim() == ""||fixvalue=="请输入搜索关键字") {
+            document.getElementById("keyword").value = "";
+            alert("关键字不能为空！");
+            return false;
+        } else {
+            window.open('/search.html?keyword=' + encodeURI(fixvalue)); //传入参数
+        }
+        return false;
+    }
+    //回车提交方法
+    function EnterSub() {
+        var len = arguments.length;
+        var event;
+        if(len == 1) {
+            event = arguments[0];
+        }
+        var evt = event ? event : (window.event ? window.event : null);
+        if(evt.keyCode == 13) {
+            //必需，先将文本转换为utf-8
+            document.charset = "utf-8";
+            var fixvalue = document.getElementById("keyword").value;
+            fixvalue = fixvalue.replace(/\~|\!|\*|\?|\^|\\|\(|\)|\[|\]|\+|\-|\:|\{|\}|\"/g, "");
+            if(fixvalue.trim() == "") {
+                document.getElementById("keyword").value = "";
+                alert("关键字不能为空！");
+                return false;
+            } else {
+                 window.open('/search.html?keyword=' + encodeURI(fixvalue)); //传入参数
+                //window.open('/site/gzhfpc/search.html?siteId=240&searchWord=' + encodeURI(fixvalue)); //传入参数
+            }
+            return false;
+        }
+    }
+
+
+
+</script></div></div><div class="navBar"><ul class="nav clearfix"><li id="m1" class="m"><h3> <a href="/"><i></i> <span>Home</span></a> </h3></li><li id="m2" class="m"><h3> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/"><i></i> <span>News Center</span></a> </h3><div class="sub"><div class="xt_con"><ul><li class="xt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/ttxw/"><span>headline News</span></a> </li><li class="xt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/zwyw/"><span>Government affairs</span></a> </li><li class="xt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/sndt/"><span>Provincial News</span></a> </li><li class="xt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/spzl/"><span>Video column</span></a> </li><li class="xt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/tzgg/"><span>announcement</span></a> </li><li class="xt_hover"> <a href="http://www.gov.cn/zhengce/index.htm" target="_blank"><span>State Council documents</span></a> </li><li class="xt_hover"> <a href="http://www.guizhou.gov.cn/zwgk/zcfg/szfwj_8191/szfl_8192/index.html" target="_blank"><span>Provincial Government Documents</span></a> </li><li class="xt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/yqtb/"><span>Outbreak notification</span></a> </li></ul></div></div></li><li id="m3" class="m"><h3> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/"><i></i> <span>Open government affairs</span></a> </h3><div class="sub"><div class="zt_con"><ul><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkzn/"><span>Information Disclosure Guide</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkml/"><span>Information disclosure directory</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/ysqgk/"><span>Open upon request</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkzd/"><span>Information disclosure system</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgknb/"><span>Annual Information Disclosure Report</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/xxgkyjx/"><span>Information disclosure suggestion box</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zwgk_500663/ldzc/"><span>Window of leadership</span></a> </li><li class="zt_hover"> <a href="http://www.gzhfpc.gov.cn/zfxxgk/"><span>Government Information Disclosure</span></a> </li></ul></div></div></li><li id="m4" class="m"><h3> <a href="http://www.gzhfpc.gov.cn/gzcy_500663/"><i></i> <span>public participation</span></a> </h3><div class="sub"><div class="gt_con"><ul><li class="gt_hover"> <a href="http://www.gzhfpc.gov.cn/gzcy_500663/zwxx/"><span>Government Mailbox</span></a> </li><li class="gt_hover"> <a href="/gzcy_500663/zjdc/wsdc?num=1"><span>Online survey</span></a> </li><li class="gt_hover"> <a href="/gzcy_500663/zjdc/yjzj?num=3"><span>Call for opinions</span></a> </li><li class="gt_hover"> <a href="http://weibo.com/u/3458987284?is_hot=1" target="_blank"><span>Government microblogging</span></a> </li><li class="gt_hover"> <a href="javascript:;" class="wx"><span>Government WeChat</span></a> </li><!--<li class="gt_hover"><a href="http://www.gzhfpc.gov.cn/gzcy_500663/zxft/"><span>在线访谈</span></a></li>--><li class="gt_hover"> <a href="http://www.gzhfpc.gov.cn/gzcy_500663/hygq/"><span>Respond to concerns</span></a> </li><li class="gt_hover"> <a href="http://www.gzhfpc.gov.cn/gzcy_500663/xwfbh/"><span>Press conference</span></a> </li><li class="gt_hover"> <a href="http://www.gzhfpc.gov.cn/gzcy_500663/cjwtzsk/"><span>FAQ Knowledge Base</span></a> </li></ul><!--script type="text/javascript">
+    $('.wx').on('click', function () {
+        layer.open({
+            type: 1,
+            area: ['360px', '360px'],
+            title: false, //不显示标题
+            shadeClose: true,
+            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+        });
+    });
+</script--></div></div></li><li id="m5" class="m"><h3> <a href="http://www.gzhfpc.gov.cn/zxfw_500663/"><i></i> <span>online service</span></a> </h3><div class="sub"><div class="zxt_con"><ul><li class="zxt_hover"> <a href="http://zwfw.guizhou.gov.cn/bmqjd.do?ocode=4130465240220517062&amp;areacode=520000/" target="_blank"><span>Guizhou Government Service Network</span></a> </li><li class="zxt_hover"> <a href="http://www.gzegn.gov.cn/gzszwfww/bmbs/showDetail.do?webId=1&amp;deptCode=4130465240220517062" target="_blank"><span>Administrative approval</span></a> </li><li class="zxt_hover"> <a href="http://www.gzhfpc.gov.cn/zxfw_500663/ggfw/"><span>Public Service</span></a> </li></ul></div></div></li><li id="m6" class="m"><h3> <a href="http://www.gzhfpc.gov.cn/zdgz_500663/"><i></i> <span>Key work</span></a> </h3><div class="sub"><div class="zdt_con"><ul><li class="zdt_hover"> <a href="http://www.gzhfpc.gov.cn/zdgz_500663/ylgl/"><span>Medical management</span></a> </li><li class="zdt_hover"> <a href="http://www.gzhfpc.gov.cn/zdgz_500663/ygdx/"><span>Change direction</span></a> </li><li class="zdt_hover"> <a href="http://www.gzhfpc.gov.cn/zdgz_500663/xhgz/"><span>Association work</span></a> </li><!--li class="zdt_hover"><a href="http://www.gzhfpc.gov.cn/zdgz_500663/ylgg/"><span>医疗广告</span></a></li--><li class="zdt_hover"> <a href="http://www.gzhfpc.gov.cn/xwzx_500663/yqtb/"><span>Outbreak notification</span></a> </li></ul></div></div></li><li id="m8" class="m"><h3> <a href="http://58.16.65.11:9091/wjw/public/statistics" target="_blank"><i></i> <span>Data disclosure</span></a> </h3><div class="sub"><div class="zdt_con"><ul><li class="zdt_hover"> <a href="http://58.16.65.11:9091/wjw/public/statistics" target="_blank"><span>Outbreak public</span></a> </li><li class="zdt_hover"> <a href="http://58.16.65.11:9091/wjw/public/hospitalStatistics" target="_blank"><span>List of Chinese Medicine Hospitals</span></a> </li><li class="zdt_hover"> <a href="http://data.guizhou.gov.cn/list.html?orgId=1474445138442" target="_blank"><span>Data open</span></a> </li></ul></div></div></li><li id="m7" class="m"><h3> <a href="http://www.gzhfpc.gov.cn/ztzl_500663/"><i></i> <span>Special Column</span></a> </h3><!--div class="sub">
+							<div class="ztt_con">
+								<ul>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/ygzc/"><span>医改之窗</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/rkyjk/"><span>人口与健康</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/aqsc/"><span>安全生产</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/sdgysdcgzf/"><span>山地公园省多彩贵州风</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/fbfk/"><span>防暴反恐自救互救知识</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/jbggwsfw/"><span>基本公共卫生服务</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/yszj/"><span>院士专家医疗卫生援黔行动</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="http://www.gzgov.gov.cn:88/wtpgt/index.shtml" target="_blank"><span>政府网站问题曝光台</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="http://www.ccdi.gov.cn/special/bgzq5/index.html" target="_blank"><span>监督举报曝光区</span></a></li>	
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/qyrcjh/"><span>黔医人才计划</span></a></li>
+									<li class="ztt_hover" style="margin: 2px 24px 0px 39px;"><a href="/ztzl/yywstzgg/"><span>贵州医药卫生体制改革</span></a></li>
+								</ul>
+							</div>
+						</div--></li></ul></div><script type="text/javascript">
+			jQuery(".nav").slide({ 
+					type:"menu", //效果类型
+					titCell:".m", // 鼠标触发对象
+					targetCell:".sub", // 效果对象，必须被titCell包含
+					effect:"slideDown",//下拉效果
+					delayTime:300, // 效果时间
+					triggerTime:0, //鼠标延迟触发时间
+					returnDefault:true  //返回默认状态
+				});
+
+		</script></div><div class="content-main"><div class="dqwz"> Your current location ： <a href="../../../../2019-nCoV" title="Home" class="CurrChnlCls">Home</a> » <a href="../../../Data%20collection" title="News Center" class="CurrChnlCls">News</a> » <a href="../../Official%20reports%20-%20Mainland%20China" title="announcement" class="CurrChnlCls">Notice</a> </div><div class="body_content" id="c"><div class="title"><h1> Epidemic situation of new coronavirus pneumonia in Guizhou Province from 12 to 24 on February 12, 2020 </h1><h2></h2><div class="toolbar"><script type="text/javascript">
+                    var zz='';
+                    if(zz!=''){
+                        document.write('作者：'+zz);document.write('&emsp;');
+                    }
+                </script><script type="text/javascript">
+                    var ly="宣传处";
+                    if(ly!=''&&ly!='null'){
+                        document.write('来源：宣传处&nbsp;&nbsp;');
+                    }else{
+                        document.write('来源：健康贵州&nbsp;&nbsp;');
+                    }
+                </script> release time: <script type="text/javascript">
+                    var  pubdata='2020年02月13日 08:37:43';
+                    if(pubdata!=''){
+                        document.write(pubdata);
+                    }
+                </script><!--编辑：卫健委石磊--><!--点击量：<em id="dbfwl"><iframe id="dbfwlIf" style="display:none" src="/count/index?id=48770147&siteid=500663"></iframe></em>次&emsp;--><script type="text/javascript">
+                $("#dbfwlIf").load(function() {
+                var thisnum = $("#dbfwlIf").contents().find("body").html().replace('document.write(','').replace(');','');
+                thisnum = thisnum.toString();
+                $("#dbfwl").append(thisnum);
+                });
+                </script> <a href="javascript:window.print();">Print this</a> <a href="javascript:window.opener=null;window.close()">pageClose this page</a> Font: <span class="smallFont">Small</span> <span class="medFont">, medium and</span> <span class="largeFont curFont">large</span> <i style="padding-left:10px">eyesight protection color: <input onclick="ChangeColor('#F9F6AF')" type="image" name="bgcolor" src="/images/110827103140057.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#9DDBF4')" type="image" name="bgcolor22" src="/images/110827103140099.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#DEDEDE')" type="image" name="bgcolor2" src="/images/110827103140184.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#F9D1D9')" type="image" name="bgcolor2" src="/images/110827103140215.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#E4C8F8')" type="image" name="bgcolor2" src="/images/110827103140245.gif" height="13" width="13" align="absmiddle"><input onclick="ChangeColor('#ffffff')" type="image" name="bgcolor2" height="13" src="/images/110827103140292.gif" width="13" align="absmiddle"></i> </div></div><div class="content" style="width: 1110px;margin: 0 auto;"><div class="view TRS_UEDITOR trs_paper_default trs_word trs_key4format trs_web"><p style="text-indent: 2em;"> At 12:00 to 24:00 on February 12, 2020, there were two new confirmed cases of new coronavirus pneumonia in the province, and two new cured cases. Among them: 2 new cases were confirmed in Guiyang. Among the newly added cured cases, 2 were from Qianxinan Prefecture. </p><p style="text-indent: 2em;"> As of 24:00 on February 12, 135 cases of new coronavirus pneumonia have been reported in the province. Among them, 49 had a history of staying in Wuhan, 14 had a history of staying in other areas outside Hubei, and 13 had a history of staying in areas outside Hubei; 20 cases were cured and discharged, 100 cases were stable, 9 cases were critically ill, 5 cases were critically ill, and 1 died. Examples: 67 males and 68 females; the oldest is 87 years old and the youngest is 1 month (diagnostic time); 33 cases in Guiyang (3 cases have been cured), 25 cases in Zunyi city (1 case has been cured), 10 cases in Liupanshui city (1 case has been cured), 4 cases in Anshun City, 22 cases in Bijie City (2 cases have been cured), 10 cases in Tongren City (5 cases have been cured), 10 cases in Qiandongnan Prefecture (2 cases have been cured), 17 in Qiannan Prefecture Cases (3 cases have been cured), 4 cases in Qianxinan Prefecture (3 cases have been cured). There are 50 suspected cases. </p><p style="text-indent: 2em;"> A total of 2024 close contacts have been tracked, 1,242 medical observations have been lifted, and 707 are still receiving medical observations. </p><p style="text-indent: 2em;"> The information of the two new patients is as follows: </p><p style="text-indent: 2em;"> Patient 1: Lin Mouzhi, male, 35 years old, currently living in No. 356 Jiefang Road, Nanming District, Guiyang City, a PhD student in a university in Wuhan, returned to Guiyang by high-speed rail from Wuhan on January 23, and was at home on January 24-25 Isolation. On the night of January 26, I took an online car ride with my grandmother to stay at the Kempin Crown Hotel in Huaguoyuan. From January 27th to 28th, the patient went to the Huaguoyuan No. 1 Community Health Service Center for medical treatment because of diarrhea. He was transferred to a designated hotel for isolation. He was diagnosed with a confirmed case on February 12, and is currently undergoing isolation and treatment at Jiangshan Hospital in Guizhou Province. His condition is stable. </p><p style="text-indent: 2em;"> Patient 2: Zhu Moxiu, female, 63 years old, currently living in Zhaojixin Wangfu, Taici Community, Nanming District, Guiyang City. She was the sister of Zhu Mouhong and Zhu Moulan who were diagnosed on February 3. She participated in family gatherings many times during the New Year. Due to close contacts of confirmed cases, they were isolated and observed at designated hotels from February 2nd. Fever, sore throat, and coughing symptoms appeared on February 7th. They were diagnosed as confirmed cases on February 12th and are currently in Guizhou Provincial People&#39;s Hospital. Isolation treatment, stable condition. </p></div></div><div class="bdsharebuttonbox" style="width: 1110px;margin: 0 auto;"> <a href="#" class="bds_more" data-cmd="more">share to:</a> <a title="Share to QQ space" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="share to Sina Weibo" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="Share on Tencent Weibo" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="Share to Renren" href="#" class="bds_renren" data-cmd="renren"></a><a title="Share on WeChat" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="Share to QQ friends" href="#" class="bds_sqq" data-cmd="sqq"></a><a title="Share to Email Share" href="#" class="bds_mail" data-cmd="mail"></a><a title="Share to copy URL" href="#" class="bds_copy" data-cmd="copy"></a><a title="Share to print" href="#" class="bds_print" data-cmd="print"></a><a title="Share to One Click Share" href="#" class="bds_mshare" data-cmd="mshare"></a></div><script type="text/javascript">
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mail","copy","print","mshare"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mail","copy","print","mshare"]}};with(document){0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/3600000)]};
+        </script><div class="KeysList"><!--div class="left">
+            关键字：
+            <a onclick='javascript:window.open("/index/search.html?keyword=%e8%b0%83%e7%a0%94")' href="javascript:;">调研</a>
+            </div--><div class="right"> <a href="http://mail.qq.com/cgi-bin/qm_share?url=./t20200213_48770147.html&amp;to=qqmail&amp;desc=&amp;summary=&amp;title=2020%E5%B9%B42%E6%9C%8812%E6%97%A512%E2%80%9424%E6%97%B6%E8%B4%B5%E5%B7%9E%E7%9C%81%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E6%83%85%E5%86%B5&amp;site=&amp;pics=" target="_blank" class="box_02">I want to recommend</a> <!--a href="/syqt/wzjc/" class="box_03">我要纠错</a--> <a class="box_02" href="/syqt_500663/rssdy/index.html" target="_blank">custom made</a> </div></div><div class="page"><div id="prevpage"> <span>Previous:</span> <a href="javascript:;" id="no1">No</a> </div><div id="prevpage"> <span>Next:</span> <a href="javascript:;" id="no2">None</a> <script type="text/javascript">
+                        var  str="";
+                        var str_1 = "./t20200212_48615461.html";
+                        var str_4 = '2020年2月12日0—12时贵州省新型冠状病毒肺炎疫情情况';
+                        if(str_4!="")
+                        {
+                            jQuery("#no2").hide();
+                            if (str=="") {
+                                document.write('<a  href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a>');
+                            } else {
+                                document.write('<a  href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a>');
+                            }
+                        }
+                    </script></div></div><div class="information"><h1> <span>Related Information</span> </h1><ul><script type="text/javascript">
+                    var key="";
+                    if(key!=''&&key!='null'){
+                    
+                    }else{
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200212_48615461.html";
+                        var str_4 = '2020年2月12日0—12时贵州省新型冠状病毒肺炎疫情情况';
+                        var str_2 = '2020-02-12';
+                        if (str=="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200212_48539710.html";
+                        var str_4 = '2020年2月11日14—24时贵州省新型冠状病毒肺炎疫情情况';
+                        var str_2 = '2020-02-12';
+                        if (str=="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200211_48421135.html";
+                        var str_4 = '2020年2月11日0—14时贵州省新型冠状病毒肺炎疫情情况';
+                        var str_2 = '2020-02-11';
+                        if (str=="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "./t20200211_48345381.html";
+                        var str_4 = '2020年2月10日12—24时贵州省新型冠状病毒肺炎疫情情况';
+                        var str_2 = '2020-02-11';
+                        if (str=="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                                document.write('<li>');
+                        var  str="";
+                        var str_1 = "../../zwyw/202002/t20200210_48216276.html";
+                        var str_4 = '2020年2月10日0—12时贵州省新型冠状病毒肺炎疫情情况';
+                        var str_2 = '2020-02-10';
+                        if (str=="") {
+                            document.write('<a TARGET="_blank"   href="'+str_1+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        } else {
+                            document.write('<a TARGET="_blank"   href="'+str+'" alt="'+str_4+'" title="'+str_4+'">'+str_4+'</a><i>'+str_2+'</i>');
+                        }
+                        document.write('</li>');
+                    
+                    }
+                </script></ul></div></div></div><!--底部--><!--底部--><div class="footer"><!--友情链接--><div class="yqlj"><ul><!--<li><a href=""><img src="yqlj1.jpg" /></a></li>
+					<li><a href=""><img src="yqlj2.jpg" /></a></li>
+					<li style="margin-right: 0px;"><a href=""><img src="./images/yqlj3.jpg" /></a></li>--></ul></div><!--底部内容--><div class="db" style="height:210px;"><div class="dbnr" style="width: 800px;"><div class="dbnr_lf"><ul><!--网站找错--><li class="jc"><script id="_jiucuo_" sitecode="5200000034" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js?v=0.1968206404708326"></script></li><li class="hx"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/60408941/CA240000000604089410001.js' type='text/javascript'%3E%3C/script%3E"));</script></li></ul></div><div class="dbnr_lr" style="width:590px;"><ul class="footer_p1"><li> <a href="http://www.gzhfpc.gov.cn/syqt_500663/wzbz/">Website help</a> </li><li> | </li><li> <a href="http://www.gzhfpc.gov.cn/syqt_500663/wzdt/">Sitemap</a> </li><li> | </li><li> <a href="http://www.gzhfpc.gov.cn/syqt_500663/gywm/">about us</a> </li><li> | </li><li> <a href="http://www.gzhfpc.gov.cn/syqt_500663/lxfs/">contact details</a> </li></ul><p class="footer_p2"> Organizer: Guizhou Provincial Health and Health Committee Government website identification code: 5200000034 </p><p class="footer_p2"> Chinese domain name: Guizhou Provincial Health Committee. Government Affairs.cn Qian ICP No. 14007722 </p><p class="footer_p2"> Contact address: Provincial Health and Health Commission General Office, 8th Floor, Building 7, Provincial Government Hospital, No. 242 North Zhonghua Road, Guiyang </p><p class="footer_p2"> Phone: Working hours (Monday to Friday 8: 30-18: 00): 0851—86826829 Non-working hours: 0851-86870000 </p><p class="footer_p2"> Management unit: Guizhou Provincial Population Information Center 2077842460@qq.com </p><div style="width:300px;"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52010302000528" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/images/wjwba_icon.png" style="float:left;"></a> <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"> Guiyang Public Security No. 52010302000528 </p></div><!--<p class="footer_p2">								
+								<span>技术支持：<a href="http://www.bohoog.com/" target="_blank">贵州多彩博虹科技有限公司</a></span>
+							</p>--><p style="display: none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254814058'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254814058%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></p></div></div></div></div><!--新增--><style type="text/css">
+.lf-aside {position: fixed;top:214px;left:50%;margin-left: 610px; background: #fff;}
+.lf-aside>a {display: block; width: 80px;height:70px; text-align:center; overflow:hidden; margin-bottom:5px; border-bottom: 1px solid #d2d2d2;}
+.lf-aside>a img {width:65px}
+.lf-aside>a i{ display:block; width:65px; height:50px; background: url(/images/RightBar.png) no-repeat;}
+.lf-aside>a.wza i{ background-position:-5px -350px; }
+.lf-aside>a.lm_wx i{ background-position:0px -280px;}
+.lf-aside>a.lm_wb i{ background-position:0px -110px;}
+.lf-aside>a.lm_colose{ height:20px; border-bottom: none;}
+.lf-aside>a.lm_colose img{ width:40px;}
+.lf-aside .znwd {padding-top:48px;box-sizing: border-box;}
+.lf-aside .znwd img {width:33px; position: absolute;
+    top: 8px;
+    left: 15px;}
+
+</style><div class="lf-aside"><!--<a href="http://wza.gzhfpc.gov.cn/" target="_blank" class="wza"><i></i>无障碍<img src="/images/wza.png" alt="无障碍" /></a>--> <a class="znwd" href="http://znwd.gzhfpc.gov.cn"><img src="/images/znwd.png" alt=""> Smart Q &amp; A</a> <a href="javascript:;" class="xiao lm_wx"><i></i> WeChat</a> <!--<img src="/images/zwwx2.png" alt="微信" />--> <a class="xiao lm_wb" href="javascript:;"><i></i> Weibo</a> <!--<img src="/images/zwwb2.png" alt="微博" />--> <a href="javascript:;" style="height: 265px;"><img src="/images/shce.jpg" style="width: 80px;"></a> <a href="javascript:;" class="lm_colose"><img src="http://www.gzhfpc.gov.cn/images/colose_lm.png" width="40"></a> </div><script type="text/javascript">
+			    $('.lm_wx').on('click', function () {
+			        layer.open({
+			            type: 1,
+			            area: ['360px', '360px'],
+			            title: false, //不显示标题
+			            shadeClose: true,
+			            content: '<img src="/images/weixin.jpg" ignore="1" style="height: 344px;width:344px" />'
+			        });
+			    });
+$('.lm_wb').on('click', function () {
+			        layer.open({
+			            type: 1,
+			            area: ['360px', '360px'],
+			            title: false, //不显示标题
+			            shadeClose: true,
+			            content: '<img src="/images/lm_weibo.png" ignore="1" style="height: 344px;width:344px" />'
+			        });
+			    });
+				
+				$(".lm_colose").on('click',function (){
+					$(".lf-aside").hide();				
+				})
+</script><script id="_trs_ta_js" src="//imperiallondon.sharepoint.com///ta.trs.cn/c/js/ta.js?mpid=1000" async="async" defer></script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=61789191" charset="UTF-8"></script><script language="JavaScript">var _trackDataType = "web";var _trackData = _trackData || [];</script><!--<script type="text/javascript" charset="utf-8" id="kpyfx_js_id_10000790" src="//fxsjcj.kaipuyun.cn/count/10000790/10000790.js"></script>--><!--网站找错--><script id="_jiucuo_" sitecode="5200000034" src="/images/jiucuo.js"></script><script>
+$(document).ready(function () {
+            for (var i = 0; i < document.links.length; i++) {
+                var url = document.links[i].href.toLowerCase();
+                if (url.indexOf("http://localhost") == -1 && url.indexOf("gzhfpc.gov.cn") == -1&& url.indexOf("http://220.197.219.147")== -1 && url != "gzhfpc.bohoog.com" &&url.indexOf("javascript:") == -1 && url != "#" && !document.links[i].onclick) {
+                    document.links[i].onclick = function () {
+                        return confirm("您访问的链接即将离开“贵州省卫生健康委员会门户网站”，是否继续？")
+                    };
+                }
+            }
+        });
+</script><!--博虹探针代码--><script type="text/javascript">
+    var _wapaq = _wapaq || [];
+    _wapaq.push(['trackPageView']);
+    (function() {
+        var u = "http://webprobe.octodata.com.cn/";
+        _wapaq.push(['setTrackerUrl', u + 'tracker']);
+        _wapaq.push(['setSiteId', 86]);
+        _wapaq.push(['setDiscardUrlParams', true]);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = 'http://bazhuawangluo.oss-cn-hangzhou.aliyuncs.com/ds2.js?v=' + new Date().getUTCDay();
+        s.parentNode.insertBefore(g, s);
+    })();
+</script></body></html>

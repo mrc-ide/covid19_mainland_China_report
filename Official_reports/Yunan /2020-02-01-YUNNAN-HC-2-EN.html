@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><title> Website of Yunnan Provincial Health Committee </title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="0"><meta http-equiv="keywords" content="<U+536B><U+751F>,<U+8BA1><U+5212><U+751F><U+80B2>,<U+536B><U+751F><U+8BA1><U+751F>"><meta http-equiv="description" content="<U+4E91><U+5357><U+7701><U+536B><U+751F><U+548C><U+8BA1><U+5212><U+751F><U+80B2><U+59D4><U+5458><U+4F1A>,<U+4E91><U+5357><U+7701><U+536B><U+751F><U+8BA1><U+751F><U+59D4><U+5458><U+4F1A>"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="stylesheet" type="text/css" href="/wjwWebsite/web/css/style-index.css"><link rel="stylesheet" type="text/css" href="/wjwWebsite/web/css/cebian.css"><link rel="stylesheet" type="text/css" href="/wjwWebsite/web/css/bootstrap.min.css"><link rel="stylesheet" href="/wjwWebsite/web/css/owl.carousel.css"><script type="text/javascript" src="/wjwWebsite/web/js/jquery-1.8.3.min.js"></script><script type="text/javascript" src="/wjwWebsite/web/js/owl.carousel.js"></script><link rel="shortcut icon" href="/wjwWebsite/web/images/logo_m.png"><link rel="stylesheet" type="text/css" href="/wjwWebsite/web/css/vicepage.css"><script type="text/javascript">
+/**
+$(document).ready(function(){
+	//var url = "http://localhost:8083/";	
+	var url = "http://www.pbh.yn.gov.cn/";	
+	
+	$("#content").find("img").each(function(){
+		var img_src = $(this).attr("src");
+		//if(img_src.indexOf("wjwportal")>0){
+		if(img_src.indexOf("wjwportal")>0){
+				//var imgUrl = url +"wjwportal"+img_src.split("wjwportal")[1];
+				var imgUrl = url +"wjwWebsite"+img_src.split("wjwportal")[1];
+				$(this).attr("src",imgUrl);
+			}
+	});
+	
+	$("#content").find("a").each(function(){
+		var a_url = $(this).attr("href");
+		if(a_url.indexOf("wjwportal")>0){
+				var aUrl = url +"wjwWebsite"+a_url.split("wjwportal")[1];
+				 $(this).attr("href",aUrl);
+			}
+	});
+	
+
+
+	
+	
+});
+*/
+</script><style type="text/css">
+#right_hitCount{
+width: 180px;
+height: auto; 
+position: fixed;
+top: 50%;
+left: 15px;
+margin-top: -200px;
+
+}
+.mypanel-heading{
+padding: 2px 15px !important;
+}
+.mypanel-body{
+padding: 10px !important;
+}
+.myline{
+width: 150px;
+overflow: hidden;/*<U+8D85><U+51FA><U+90E8><U+5206><U+9690><U+85CF>*/
+white-space: nowrap;/*<U+4E0D><U+6362><U+884C>*/
+text-overflow:ellipsis;/*<U+8D85><U+51FA><U+90E8><U+5206><U+6587><U+5B57><U+4EE5>...<U+663E><U+793A>*/
+font-size: 12px;
+}
+</style></head><body><script language="javascript">
+
+//<U+52A0><U+5165><U+6536><U+85CF>
+function addFavorite2() {
+    var url = window.location;
+    var title = document.title;
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf("360se") > -1) {
+        alert("<U+7531><U+4E8E>360<U+6D4F><U+89C8><U+5668><U+529F><U+80FD><U+9650><U+5236>,<U+8BF7><U+6309> Ctrl+D <U+624B><U+52A8><U+6536><U+85CF>!");
+    }
+    else if (ua.indexOf("msie 8") > -1) {
+        window.external.AddToFavoritesBar(url, title); //IE8
+    }
+    else if (document.all) {
+  try{
+   window.external.addFavorite(url, title);
+  }catch(e){
+   alert('<U+60A8><U+7684><U+6D4F><U+89C8><U+5668><U+4E0D><U+652F><U+6301>,<U+8BF7><U+6309> Ctrl+D <U+624B><U+52A8><U+6536><U+85CF>!');
+  }
+    }
+    else if (window.sidebar) {
+        window.sidebar.addPanel(title, url, "");
+    }
+    else {
+  alert('<U+60A8><U+7684><U+6D4F><U+89C8><U+5668><U+4E0D><U+652F><U+6301>,<U+8BF7><U+6309> Ctrl+D <U+624B><U+52A8><U+6536><U+85CF>!');
+    }
+}
+
+//<U+641C><U+7D22>
+function search(){
+    if ($("#keywords").val().length == 0) {
+        alert("<U+8BF7><U+8F93><U+5165><U+641C><U+7D22><U+5173><U+952E><U+5B57>");
+        return;
+    } else {
+    	$('#search-form').submit();
+    }
+}
+/**
+//<U+8BBE><U+4E3A><U+9996><U+9875>
+
+function SetHome(url){
+
+if (document.all) {
+
+    document.body.style.behavior='url(#default#homepage)';
+
+       document.body.setHomePage(url);
+
+}else{
+
+    alert("<U+60A8><U+597D>,<U+60A8><U+7684><U+6D4F><U+89C8><U+5668><U+4E0D><U+652F><U+6301><U+81EA><U+52A8><U+8BBE><U+7F6E><U+9875><U+9762><U+4E3A><U+9996><U+9875><U+529F><U+80FD>,<U+8BF7><U+60A8><U+624B><U+52A8><U+5728><U+6D4F><U+89C8><U+5668><U+91CC><U+8BBE><U+7F6E><U+8BE5><U+9875><U+9762><U+4E3A><U+9996><U+9875>!");
+
+}
+
+
+}
+*/
+
+</script><div class="main_top"><div class="top_mi"><div class="mi01"> Today is February 02, 2020 Welcome to Yunnan Health and Health Committee </div><div class="mi03"> <a href="#" rel="sidebar" onclick="JavaScript:addFavorite2()" title="Official Website of Yunnan Provincial Health Committee">bookmark our website</a> <!-- | <a onClick="SetHome('<U+7F51><U+5740>')" href="javascript:void(0)" title="<U+8BBE><U+4E3A><U+9996><U+9875>"><U+8BBE><U+4E3A><U+9996><U+9875></a> --></div><div class="mi02"><a href="#"></a></div></div></div><div class="page"><div class="MT_navwrap"><div id="MT_nav"><ul><li class="MT-item"> <a href="/wjwWebsite" hidefocus="true" class="MT-bg">Home page</a> </li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU145102707352955038&amp;cn=jgzn&amp;pcn=jgzn&amp;pid=UU145102707352955038" hidefocus="true" class="MT-bg">Institutional functions</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/col?id=UU145102840238936357&amp;cn=jggk&amp;pcn=jgzn&amp;pid=UU145102707352955038" hidefocus="true">Overview agency</a> <a href="/wjwWebsite/web/col?id=UU146640526631807048&amp;cn=wldbzjfg&amp;pcn=jgzn&amp;pid=UU145102707352955038" hidefocus="true">committee leadership and the division of</a> <a href="/wjwWebsite/web/orgView" hidefocus="true" target="_blank">internal organs</a> <a href="/wjwWebsite/web/col?id=UU146640530781123042&amp;cn=zsjg&amp;pcn=jgzn&amp;pid=UU145102707352955038" hidefocus="true">directly under the body</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU146640385767657020&amp;cn=xwzx&amp;pcn=xwzx&amp;pid=UU146640385767657020" hidefocus="true" class="MT-bg">News Center</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/col?id=UU146640545070225458&amp;cn=zcjd&amp;pcn=xwzx&amp;pid=UU146640385767657020" hidefocus="true">Interpretation of</a> <a href="/wjwWebsite/web/col?id=UU146640539810523703&amp;cn=zwxx&amp;pcn=xwzx&amp;pid=UU146640385767657020" hidefocus="true">Government Information</a> <a href="/wjwWebsite/web/col?id=UU146640541786587006&amp;cn=xwfb&amp;pcn=xwzx&amp;pid=UU146640385767657020" hidefocus="true">News Release</a> <a href="/wjwWebsite/web/col?id=UU146640543546964985&amp;cn=mtbd&amp;pcn=xwzx&amp;pid=UU146640385767657020" hidefocus="true">Media Report</a> <a href="/wjwWebsite/web/col?id=UU146640545070225458&amp;cn=zcjd&amp;pcn=xwzx&amp;pid=UU146640385767657020" hidefocus="true">Policy</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU145102842695602435&amp;cn=tzgg&amp;pcn=tzgg&amp;pid=UU145102842695602435" hidefocus="true" class="MT-bg">announcement</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/col?id=UU146640552155470698&amp;cn=tz&amp;pcn=tzgg&amp;pid=UU145102842695602435" hidefocus="true">Notice</a> <a href="/wjwWebsite/web/col?id=UU146640553623167171&amp;cn=gg&amp;pcn=tzgg&amp;pid=UU145102842695602435" hidefocus="true">announcement</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU145102905302905925&amp;cn=zxfw&amp;pcn=zxfw&amp;pid=UU145102905302905925" hidefocus="true" class="MT-bg">online service</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/letterNotice" hidefocus="true" target="_blank">Leader&#39;s Mailbox</a> <a href="/wjwWebsite/web/questionNotice" hidefocus="true" target="_blank">Government Affairs Information Online Answering (Frequently Asked Questions)</a> <a href="/wjwWebsite/web/col?id=UU146640560348585088&amp;cn=rxdh&amp;pcn=zxfw&amp;pid=UU145102905302905925" hidefocus="true">Hotline</a> <a href="/wjwWebsite/web/votedList" hidefocus="true" target="_blank">Online Survey</a> <a href="https://zwfw.yn.gov.cn/portal/#/work-service/legal-matter?id=189e1d1590f34529b8b5145f5c39ce9c&amp;&amp;&amp;&amp;regnCode=530000000000&amp;regnName=%E4%BA%91%E5%8D%97%E7%9C%81&amp;regnlevel=0" hidefocus="true" target="_blank">Government Affairs Service Online</a> <a href="/wjwWebsite/web/col?id=UU146640565483217326&amp;cn=zlxz&amp;pcn=zxfw&amp;pid=UU145102905302905925" hidefocus="true">Downloads</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU145102906505319731&amp;cn=ztlm&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true" class="MT-bg">Thematic section</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/col?id=UU145104051600657102&amp;cn=ygzt&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">Thematic medical reform</a> <a href="/wjwWebsite/web/col?id=UU146788534864829286&amp;cn=djhdflj&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">party building and clean government</a> <a href="/wjwWebsite/web/col?id=UU146822861559258861&amp;cn=wsrx&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">12320 health hotline</a> <a href="/wjwWebsite/web/col?id=UU146822819975037116&amp;cn=wsyjzt&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">health emergency topics</a> <a href="/wjwWebsite/web/col?id=UU146822814445967171&amp;cn=yljgcyryhygfzt&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">medical practitioners industry standards topic</a> <a href="/wjwWebsite/web/col?id=UU146822828999675303&amp;cn=farmzz&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">AIDS people&#39;s war</a> <a href="/wjwWebsite/web/col?id=UU146848496662534972&amp;cn=fyjkjh&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">maternal and child health</a> <a href="/wjwWebsite/web/col?id=UU151263434499836702&amp;cn=spaqbz&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">food safety standards</a> <a href="/wjwWebsite/web/col?id=UU146875442899678799&amp;cn=shxzhspzdgg&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">to deepen the reform of administrative examination and approval system (dual publicity column)</a> <a href="/wjwWebsite/web/col?id=UU155427700597142648&amp;cn=shcezl&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">anti-crime crackdown column</a> <a href="/wjwWebsite/web/col?id=UU157976428326282067&amp;cn=xxgzbd&amp;pcn=ztlm&amp;pid=UU145102906505319731" hidefocus="true">novel coronavirus infection Prevention and control of pneumonia</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/xzView" hidefocus="true" target="_blank">Administration</a> <div><span class="MT-arrow"></span> <a href="http://www.nhc.gov.cn/wjw/sjcx/sjcx.shtml" hidefocus="true" target="_blank">Data query</a> <a href="https://credit.wsjd.gov.cn/portal/" hidefocus="true" target="_blank">credit Yunnan</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU146640604174587970&amp;cn=jkxx&amp;pcn=jkxx&amp;pid=UU146640604174587970" hidefocus="true" class="MT-bg">Health promotion</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/col?id=UU156143256816043044&amp;cn=jkbk&amp;pcn=jkxx&amp;pid=UU146640604174587970" hidefocus="true">Health Encyclopedia</a> </div></li><li class="MT-item"> <a href="/wjwWebsite/web/col?id=UU145102908958589619&amp;cn=zfxxgk&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true" class="MT-bg">Government Information Disclosure</a> <div><span class="MT-arrow"></span> <a href="/wjwWebsite/web/col?id=UU146640608814494729&amp;cn=gkbf&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">Public way to</a> <a href="/wjwWebsite/web/openCol" hidefocus="true" target="_blank">open a list of</a> <a href="/wjwWebsite/web/col?id=UU146640611139795565&amp;cn=gkzd&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">open system of</a> <a href="/wjwWebsite/web/col?id=UU146640612447434122&amp;cn=ysqgk&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">publicly according to application</a> <a href="/wjwWebsite/web/col?id=UU146640609910298823&amp;cn=gknb&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">discloses annual</a> <a href="/wjwWebsite/web/col?id=UU146880738361945588&amp;cn=zfwj&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">government documents,</a> <a href="/wjwWebsite/web/col?id=UU149864000043660637&amp;cn=zdlyxxgk&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">information disclosure key areas of</a> <a href="/wjwWebsite/web/col?id=UU153933521518202994&amp;cn=zdjcxx&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">major decision-making information public</a> <a href="/wjwWebsite/web/col?id=UU154529079490222582&amp;cn=zfwzndbb&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">government websites annual reports</a> <a href="/wjwWebsite/web/col?id=UU155434360563367872&amp;cn=cwxxgk&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">financial information disclosure</a> <a href="/wjwWebsite/web/col?id=UU150148704591442388&amp;cn=szjc&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">quality monitoring</a> <a href="/wjwWebsite/web/col?id=UU149299628215522065&amp;cn=rddbjyhzxtabljg&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">NPC deputies and CPPCC proposals for recommendations result</a> <a href="/wjwWebsite/web/col?id=UU157865821558205459&amp;cn=shgysy&amp;pcn=zfxxgk&amp;pid=UU145102908958589619" hidefocus="true">areas of government social service construction information disclosure</a> </div></li><!-- 	
+		<li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+9996><U+9875></a></li>
+		
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+673A><U+6784><U+804C><U+80FD></a>
+         <div><span class="MT-arrow"></span><a href="#" hidefocus="true"><U+673A><U+6784><U+804C><U+80FD>2</a><a href="#" hidefocus="true"><U+673A><U+6784><U+804C><U+80FD>3</a><a href="#" hidefocus="true" class="MT-list-last"><U+673A><U+6784><U+804C><U+80FD>4</a></div></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+65B0><U+95FB><U+4E2D><U+5FC3></a></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+901A><U+77E5><U+516C><U+544A></a></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+5728><U+7EBF><U+670D><U+52A1></a></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+4E13><U+9898><U+680F><U+76EE></a> <div><span class="MT-arrow"></span><a href="#" hidefocus="true"><U+4E13><U+9898><U+680F><U+76EE>2</a><a href="#" hidefocus="true"><U+4E13><U+9898><U+680F><U+76EE>3</a><a href="#" hidefocus="true" class="MT-list-last"><U+4E13><U+9898><U+680F><U+76EE>4</a></div></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+884C><U+653F><U+7BA1><U+7406></a></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+5065><U+5EB7><U+4FE1><U+606F></a></li>
+        <li class="MT-item"><a href="#" hidefocus="true" class="MT-bg"><U+653F><U+5E9C><U+4FE1><U+606F><U+516C><U+5F00></a></li> --></ul></div></div></div><div class="middle"><div class="logo"><img src="/wjwWebsite/web/images/logo.png"></div><div class="ss"><form id="search-form" action="/wjwWebsite/web/search" method="post"><input style="margin-left: -40px;" type="search" id="keywords" name="keywords" placeholder="<U+8F93><U+5165><U+641C><U+7D22><U+5173><U+952E><U+5B57><U+540E><U+6309><U+4E0B><U+56DE><U+8F66>" onkeypress="if(event.keyCode==13){search()}"><!-- onkeypress="if(event.keyCode==13){$('#search-form').submit();}"  >  --> <button type="button" class="btn btn-info btn-xs " onclick="search()">search for</button> <input type="text" style="display: none;"></form><div class="weixin1" onmouseover="this.className = 'weixin1 on';" onmouseout="this.className = 'weixin1';"><a href="/wjwWebsite/web/doc/UU146875207279285142" target="_blank"></a><div class="weixin_nr"><div class="arrow"></div><img src="/wjwWebsite/web/QRcode/12320_code.jpg" width="122" height="122"></div></div><div class="weixin2" style="margin-left: 15px;" onmouseover="this.className = 'weixin2 on';" onmouseout="this.className = 'weixin2';"><a href="/wjwWebsite/web/doc/UU146875283786222507" target="_blank"></a><div class="weixin_nr"><div class="arrow"></div><img src="/wjwWebsite/web/QRcode/zy_code.jpg" width="122" height="122"></div></div></div><div class="h30"></div></div><div class="middle" style="min-height: 450px;"><!-- <div class="vicepage_right" style="float:right; width: 1020px;"> --><div class="vice_topd"><p class="biaoti_vice"> Prevention and control of pneumonia in a new coronavirus infection </p><p class="nav_small"> <a href="/wjwWebsite">Home</a> - <a href="/wjwWebsite/web/col?id=UU145102906505319731&amp;cn=ztlm&amp;pcn=ztlm&amp;pid=UU145102906505319731">Special Column</a> - <a href="/wjwWebsite/web/col?id=UU157976428326282067&amp;cn=xxgzbd&amp;pcn=ztlm&amp;pid=UU145102906505319731">Pneumonia Prevention and Control of New Coronavirus Infection</a> </p></div><div class="theSimilar" style="padding-top:10px; padding:10px 70px 0px 70px;"><p class="biaoti_big"> Pneumonia epidemic situation of new coronavirus infection in Yunnan Province </p><p class="fb_day"></p><p class="fb_day"> <span style="float: left;">[Index Number: 01510047-20200201-9343]</span> Release Date: 2020-02-01 </p><div id="content"><p style="text-indent: 48px; line-height: 38px; text-align: justify;"> <span style=";font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK;font-size:21px"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">At</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">0:00</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">on <span style='font-family: "Times New Roman"; font-size: 21px; text-align: justify; text-indent: 48px;'>February</span></span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">1</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">to</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">12,</span> Yunnan Province, report novel coronavirus infection pneumonia in</span> <span style="font-family:Times New Roman">2</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">new <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases.</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">A total of</span> <span style="font-family:Times New Roman">93</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">confirmed cases were reported across the province</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">. Except for</span> <span style="font-family:Times New Roman">2</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">people who were</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cured and discharged</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">, they are now receiving isolation treatment at designated hospitals. There were</span> <span style="font-family:Times New Roman">3</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">critical</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases and</span> <span style="font-family:Times New Roman">6</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">severe</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases, and there were no deaths. There are currently</span> <span style="font-family:Times New Roman">208</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">suspected cases</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">, with</span> <span style="font-family:Times New Roman">2,642</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">medical observations of close contacts</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">. Confirmed cases,</span> <span style="font-family:Times New Roman">30</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases</span> <span style="font-family:Times New Roman">of</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Kunming,</span> Xishuangbanna</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">in</span> <span style="font-family:Times New Roman">12</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases,</span> <span style="font-family:Times New Roman">eight</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases of</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Baoshan <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">City,</span></span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">7</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Yuxi <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">City,</span></span> <span style="font-family:Times New Roman">six</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases of</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Zhaotong <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">City,</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Dali Prefecture</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">in</span> <span style="font-family:Times New Roman">6</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases,</span> <span style="font-family:Times New Roman">six</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases of <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Lijiang,</span> Qujing</span> <span style="font-family:Times New Roman">five</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases,</span> <span style="font-family:Times New Roman">five</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases of</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Honghe <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Prefecture,</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Pu&#39;er City</span> <span style="font-family:Times New Roman">4</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases,</span> <span style="font-family:Times New Roman">3</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">cases of <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Dehong,</span> Lincang</span> <span style="font-family:Times New Roman">one</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">case.</span></span> </p><p style="text-indent: 43px; line-height: 38px; text-align: justify;"> <span style=";font-family:<U+9ED1><U+4F53>;font-size:21px"><span style="font-family:<U+9ED1><U+4F53>">Newly diagnosed patients:</span></span> </p><p style="text-indent: 43px; line-height: 38px; text-align: justify;"> <span style=";font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK;font-size:21px"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style='font-family: "Times New Roman"; font-size: 21px; text-align: justify; text-indent: 48px;'>92</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">For example:</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">63-year-old</span> male, Wuhan, Hubei Province,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Jan.</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">15</span> from driving from Wuhan to Guizhou, Yunnan Tourism,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">January 19 to January 24</span></span></span></span></span></span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">has to Luo, Maitreya, Yuanyang, Jianshui, Long Yang, Ruili and other places,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">January</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">25</span> to reach Tengchong,</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">Tengchong admitted to hospital for isolation and treatment in medical institutions,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">January</span></span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">31.</span></span></span> </p><p style="text-indent: 43px; line-height: 38px; text-align: justify;"> <span style=";font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK;font-size:21px"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style='font-family: "Times New Roman"; font-size: 21px; text-align: justify; text-indent: 48px;'>93</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">For example:</span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">24-year-old</span> male, was built Red River water, lives Jianshui Lee Xiang,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">January</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">21</span> flight from Wuhan to Kunming,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">January</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">22</span> by motor car from Kunming to build water, passenger transport shuttle back to the day Lee Village home,</span> <span style="font-family:Times New Roman"><span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK">January</span></span> <span style="font-family:<U+65B9><U+6B63><U+4EFF><U+5B8B>_GBK"><span style="font-family:Times New Roman">29</span> admitted to hospital for isolation and treatment in Jianshui County medical institutions.</span></span> </p><p><br></p></div><p class="pmore"></p><p class="fbbm_bott"> Source: Publicity Office </p></div><!-- </div> --></div><div class="footer_over"><div class="footer"><div class="fo01"><div class="fo01_top"><img src="/wjwWebsite/web/images/logo.png" style=" width: 313px; height: 66px"></div><div class="fo01_right" style="margin-top: 5px;"><table><tr><td colspan="2"> <a href="//imperiallondon.sharepoint.com///bszs.conac.cn/sitename?method=show&amp;id=2E4BB31FAE136A99E053012819AC6FB1" target="_blank"><img src="/wjwWebsite/web/images/red.png"></a> </td><td colspan="2"> <a href="http://121.43.68.40/exposure/jiucuo.html?site_code=5300000007&amp;url=http%3A%2F%2Fynswsjkw.yn.gov.cn/wjwWebsite/web/index%2F" target="_blank"><img src="http://121.43.68.40/exposure/images/jiucuo.png?v=5300000033"></a> </td><td colspan="2" style="width: 130px"> <a href="http://zc.yn.gov.cn/zhaocuo/web_zhaocuo.jsp" target="_blank"><img src="/wjwWebsite/web/images/icond.png" border="0"></a> </td></tr></table></div></div><div class="fo02"><p> Copyright @ 2000-2020 Yunnan Provincial Health Committee All Rights Reserved. </p><p> Phone on duty: 0871-67195110 Website contact phone: 0871-67195256 </p><p> Address: Zhengtong Building, No. 309 Guomao Road, Kunming, China Website identification code: 5300007 </p><p> Yunnan ICP No. 17009786-2 <img src="/wjwWebsite/web/images/dgwa.png"><!-- <U+6EC7><U+516C><U+7F51><U+5B89><U+5907> 53010202000476<U+53F7> --></p><p> <a href="http://xfservice.yn.gov.cn/gateway/indexIframe.do?code=530000000000&amp;url=/anonymous/petitionDept.do&amp;type=5#" target="_blank">Interactive Communication</a> | <a href="/wjwWebsite/web/websiteMap" target="_blank">Site Map</a> </p></div><div class="fo03"><div class="stay"><select name="" class="hezuo" id="gj"></select></div><div class="stay"><select name="" class="hezuo" id="zhou"></select></div><div class="stay"><select name="" class="hezuo" id="zhi"></select></div></div></div></div><div id="rightButton"><ul id="right_ul"><li id="right_tel" class="right_ico" show="tel" hide="gh"><li id="right_tip" class="png"><p class="flagShow_p1 flag_tel " style="line-height: 90px; margin-bottom:  0;"><!-- <a href="#" target="_blank"> --> <label style="color: #23528B">Health Hotline:</label> <span>0871-12320</span> <!--</a>--></p><!--  
+			<p class="flagShow_p1 flag_tel " style="margin-bottom: 0;">
+				<label style="color: #23528B"><U+503C><U+73ED><U+70ED><U+7EBF>:</label> <span>0871-67195110</span>
+			</p>
+			--></li></ul></div><div id="backToTop"><a href="javascript:;" onfocus="this.blur();" class="backToTop_a png"></a></div><script type="text/javascript">
+	$(document).ready(
+			function(e) {
+				youqing();
+				$("#rightButton").css("right", "0px");
+
+				var button_toggle = true;
+				$(".right_ico").on(
+						"mouseover",
+						function() {
+							var tip_top;
+							var show = $(this).attr('show');
+							var hide = $(this).attr('hide');
+							//tip_top = show == 'tel' ? 65 : -10;
+							button_toggle = false;
+							$("#right_tip").css("top", tip_top).show().find(
+									".flag_" + show).show();
+							$(".flag_" + hide).hide();
+
+						}).on("mouseout", function() {
+					button_toggle = true;
+					hideRightTip();
+				});
+
+				$("#right_tip").on("mouseover", function() {
+					button_toggle = false;
+					$(this).show();
+				}).on("mouseout", function() {
+					button_toggle = true;
+					hideRightTip();
+				});
+
+				function hideRightTip() {
+					setTimeout(function() {
+						if (button_toggle)
+							$("#right_tip").hide();
+					}, 500);
+				}
+
+				$("#backToTop").on("click", function() {
+					var _this = $(this);
+					$('html,body').animate({
+						scrollTop : 0
+					}, 500, function() {
+						_this.hide();
+					});
+				});
+
+				$(window).scroll(function() {
+					var htmlTop = $(document).scrollTop();
+					if (htmlTop > 0) {
+						$("#backToTop").show();
+					} else {
+						$("#backToTop").hide();
+					}
+				});
+				
+				$(".hezuo").change(function(){
+					var selectId = $(this).attr("id");
+					
+					var url = $('#'+selectId+' option:selected') .val();
+					if(url.length>0&&url!==undefined )
+						window.open(url);     
+				});
+			});
+
+	function youqing(){
+		var uri = "/wjwWebsite/web/youqing";
+		$.post(uri,function(data){
+			var output = data;//$.parseJSON(data.output);
+			var gj = "";
+			for(var i = 0;i<output.data[0].length;i++){
+				gj += "<option value='"+output.data[0][i][1]+"'>"+output.data[0][i][0]+"</option>";
+			}
+			$("#gj").append(gj);
+			
+			var zhou = "";
+			for(var i = 0;i<output.data[1].length;i++){
+				zhou += "<option value='"+output.data[1][i][1]+"'>"+output.data[1][i][0]+"</option>";
+			}
+			$("#zhou").append(zhou);
+			
+			var zhi = "";
+			for(var i = 0;i<output.data[2].length;i++){
+				zhi += "<option value='"+output.data[2][i][1]+"'>"+output.data[2][i][0]+"</option>";
+			}
+			$("#zhi").append(zhi);
+		});
+	}
+</script><script type="text/javascript">
+	
+	</script></body></html>
