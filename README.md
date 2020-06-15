@@ -1,6 +1,6 @@
 ## Epidemic trends and control measures of COVID-19 in mainland China
 
-This is the data repository for the COVID-19 epidemic trends in mainland China, collated by the Imperial College London COVID-19 Response Team, with the input from volunteers from the MRC Center for Global Infectious Disease Analysis and Department of Infectious Disease Epidemiology.
+This is the data repository for the COVID-19 epidemic trends and control measures in mainland China, collated by the Imperial College London COVID-19 Response Team, with the input from volunteers from the MRC Center for Global Infectious Disease Analysis and Department of Infectious Disease Epidemiology.
 
 Part of the collated data have been used to support different research streams of the Imperial College London COVID-19 Response Team, including disease severity and fatality ([Report 4](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-02-10-COVID19-Report-4.pdf)), phylodynamics in Shandong ([Report 5](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-02-15-COVID19-Report-5.pdf)), and association between inner-city movement and transmission ([Report 11](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-24-COVID19-Report-11.pdf)). 
 
@@ -10,11 +10,11 @@ In the repository, a summary of timings of control measures, including cancellat
 
 ### Files in this repository
 - Official daily reports extracted from the Health Commission in China (English and Simplified Chinese versions)
-- Epidemic trends by province/municipality extracted from official daily reports (_extracted_epidemic_trend.xlsx_)
-- Timings of control measures, school reopening, work resumption by province/municipality (_control_measures_timing.xlsx_)
+- Epidemic trends by province/municipality extracted from official daily reports (`extracted_epidemic_trend.xlsx`)
+- Timings of control measures, school reopening, work resumption by province/municipality (`control_measures_timing.xlsx`)
 
-### Report x: Data collection and analysis of the COVID-19 epidemic in mainland China
-A report describes the details of data collection and descriptive analysis of key epidemic trends in mainland China can be found on [Insert a link when available]
+### Report X: Data collection and analysis of the COVID-19 epidemic in mainland China
+A report describes the details of data collection and descriptive analysis of key epidemic trends in mainland China can be found on (a link will be inserted when available)
 
 ### Imperial College London COVID-19 Response Team
 https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/
