@@ -14,13 +14,13 @@ In the repository, a summary of timings of control measures, including cancellat
 - Timings of control measures, school reopening, work resumption by province/municipality (`control_measures_timing.xlsx`)
 
 ### Report X: Data collection and analysis of the COVID-19 epidemic in mainland China
-A report describes the details of data collection and descriptive analysis of key epidemic trends in mainland China can be found on (a link will be inserted when available)
+A report describes the details of data collection and descriptive analysis of key epidemic trends in mainland China can be found on (a link will be provided when available)
 
 ### Imperial College London COVID-19 Response Team
 https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/
 
 ### Terms of use
-This data repository is copyright 2020 Imperial College London COVID-19 Response Team, all rights reserved, is provided to the public for educational and academic research purposes.
+This data repository is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ### Suggested citation
 Imperial College London COVID-19 Response Team, Epidemic trends and control measures of COVID-19 in mainland China, June 2020.
