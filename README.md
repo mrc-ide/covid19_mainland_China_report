@@ -23,7 +23,7 @@ https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/
 This data repository is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ### Suggested citation
-Imperial College London COVID-19 Response Team, Epidemic trends and control measures of COVID-19 in mainland China, June 2020.
+Imperial College London COVID-19 Response Team, Epidemic trends and control measures of COVID-19 in mainland China, June 2020. doi: 10.5281/zenodo.3901009
 
 ### Websites of Health Commissions in mainland China:
 -	http://www.nhc.gov.cn/xcs/xxgzbd/gzbd_index.shtml (National)
