@@ -4,7 +4,7 @@ This is the data repository for the COVID-19 epidemic trends and control measure
 
 Part of the collated data have been used to support different research streams of the Imperial College London COVID-19 Response Team, including disease severity and fatality ([Report 4](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-02-10-COVID19-Report-4.pdf)), phylodynamics in Shandong ([Report 5](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-02-15-COVID19-Report-5.pdf)), and association between inner-city movement and transmission ([Report 11](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-24-COVID19-Report-11.pdf)). 
 
-Epidemic statistics in 31 provinces or municipalities of mainland China were collected from mid-January up to 31 March. National data and data of Wuhan City, Hubei Province were additionally included. Key statistics include cumulative and daily numbers of cases, deaths, recoveries, contacts, and details on disease severity and importation. The epidemic data were extracted from official daily provincial reports, public reports from the Health Commissions at national, provincial, and municipal levels. These official reports were scraped and translated into English via Google search and translate. Data extraction and quality check were carried out by independent researchers to ensure completeness and accuracy.
+Epidemic statistics in 31 provinces or municipalities of mainland China were collated from mid-January up to 31 March. National data and data of Wuhan City, Hubei Province were additionally included. Key statistics include cumulative and daily numbers of cases, deaths, recoveries, contacts, and details on disease severity and importation. The epidemic data were extracted from official daily provincial reports, public reports from the Health Commissions at national, provincial, and municipal levels. These official reports were scraped and translated into English via Google search and translate. Data extraction and quality check were carried out by independent researchers to ensure completeness and accuracy.
 
 In the repository, a summary of timings of control measures, including cancellation of cross-province public transportation, close-off management, and restaurant closure, is also presented. Timings of school reopening and progress of work resumption by province and municipalities was also monitored. The source of this information was mainly from websites of official governments and local news, as noted in the comment boxes of data.
 
@@ -13,8 +13,8 @@ In the repository, a summary of timings of control measures, including cancellat
 - Epidemic trends by province/municipality extracted from official daily reports (`extracted_epidemic_trend.xlsx`)
 - Timings of control measures, school reopening, work resumption by province/municipality (`control_measures_timing.xlsx`)
 
-### Report X: Data collection and analysis of the COVID-19 epidemic in mainland China
-A report describes the details of data collection and descriptive analysis of key epidemic trends in mainland China can be found on (a link will be provided when available)
+### Report 30: The COVID-19 epidemic trends and control measures in mainland China
+A report describes the details of data collation and descriptive analysis of key epidemic trends in mainland China can be found in https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-30-china/
 
 ### Imperial College London COVID-19 Response Team
 https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/
